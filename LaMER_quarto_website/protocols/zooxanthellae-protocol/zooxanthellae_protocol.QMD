@@ -1,0 +1,127 @@
+---
+title: "Coral Tissue separation & Chl/Zooxanthellae Counts Protocol"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Part 1: Coral Tissue separation
+
+Start with tissue removal and prepping samples for zoox counts and pigments, samples can be frozen in their Eppendorf tubes until we’re ready to do the pigment analysis and zoox counts 
+
+### 1. Primary processing
+
+1.	Filter 1 liter of fresh seawater 
+2.	Clean the coral fragment with toothbrush, rinse it in SW
+3.	 Place coral fragment in ziplock bag and seal it around the water pick. Hold fragment near top of bag from the outside to allow slurry to drop into bottom of bag while allowing for good visualization of fragment. 
+4.	Remove the tissue from entire coral fragment with water-pick using filtered seawater (0.7µm-filtered) until skeleton is white (adjust pressure to 10, don’t want to blow a hole in the bag, but strong enough to remove tissue quickly) ** use water conservatively. Try to remove all tissue with two rounds of 45 mL FSW, but can use more if needed. 
+5.	Rinse fragment when white one final time
+6.	Pour the tissue slurry (blastate) into labeled 50 ml Falcon tube
+7.	Rinse walls of bag ONCE with additional 5 mL of FSW and add to Falcon tube 
+8.	Record final blastate volume and adjust samples to equal volumes
+9.	Homogenize blastate for 30 seconds using a vortex genie, use homogenizer to break up chunks if necessary
+10.	Centrifuge blastate for 15 minutes at 4,500 rcf  
+11.	Label the cleaned skeleton and save for surface area via aluminum foil
+
+
+![](/protocols/centrifuged_blastate.jpg)
+
+caption: Animal portion floating at the top, algae pellet at bottom. 
+
+
+### 2. Separation of tissue types – Animal Tissue 
+
+1.	Pour the supernatant off from first spin (this is the top layer in the tube and is the ANIMAL fraction). This will leave behind a green/tan pellet—this is the “algae fraction” with some remaining animal tissue (this is what we want for chl a and counts) 
+2.	Add 0.75 ml FSW to algal pellet (epp. tube can only be filled to 1.1 mL or it will overflow while homogenizing)
+3.	Vortex until pellet breaks apart (around 30-60 seconds) 
+4.	Mix resuspended pellet with pipette and transfer to Eppendorf tube
+5.	Homogenize the algal fraction on high for 30 sec. 
+6.	Rinse 50 mL falcon with FSW squirt bottle and fill Eppendorf tube to 1.5 mL line with pipette, vortex 10 seconds.
+
+#(need images homogenizing algal pellet)
+
+### 3. Washing Zoox 
+
+This cleans off bits of cell debris and nematocsysts that can be confused for zoox cells during counts 
+
+1.	Centrifuge the resuspended pellet for 5 minutes at 4,500 rfc 
+2.	Pour the algal fraction supernatant into the waste beaker  
+3.	Add 0.5 mL FSW to the algal pellet for first round (to combine epp tubes into one per fragment), 0.75 mL for second round of cleaning.  
+4.	Vortex until pellet breaks apart (around 30-60 seconds) 
+5.	Homogenize (15 sec) and combine with 2nd Eppendorf tube from fragment/sample. Fill tube to 1.5 mL and vortex (10 seconds) 
+6.	Centrifuge at 7,000 rfc for 3 min  
+7.	Repeat steps 2-6 two more times, use 0.75 mL FSW in step 3. 
+
+### 4. Prepping the zoox for chl a and for zoox counts 
+
+1.	Resuspend the cleaned zoox pellet in 1 mL of FSW (use vortex, homogenizer, and pipette to mix the sample well before taking the aliquot) , add 0.25 ml of seawater after homogenizing and vortex. 
+
+
+![](/protocols/zoox_homogenate.jpg)
+
+caption: Homogenized algal fractions, ready for aliquot. 
+
+
+2.	Transfer a 100 uL aliquot to a labeled eppendorf tube  
+a.	This is for raw hemocytometer counts  
+3.	Transfer 2 separate aliquots of 0.25 mL to  2 epi tubes for PIGMENTS (2 pigment replicates per coral sample) and freeze 
+4.	Freeze the remaining 0.5 mL in epi tube for ARCHIVE ( this is our backup) 
+
+** You now should have 4 eppendorf tubes to be frozen (1 for zoox counts, 2 for pigments, 1 archive/extra) 
+
+# Part 2: Chl/Zooxanthellae Counts
+
+PROTOCOL FOR ZOOX COUNTS 
+Replication: Do 1 set of 6 counts per coral fragment (that means you’re using only one of your zoox counts subsamples, save the other in the freezer) 
+
+### 1. Dilution 
+
+1.	Thaw zoox count sample- keep out of direct light 
+2.	Resuspend pellet using electric homogenizer and/or vortex 
+a.	Remove a 100 uL aliquot and put into new Eppendorf for dilution 
+b.	For resuspending use a combination of the vortex and a sewing needle to break up the pellet. Using a syringe and pumping it didn't go too well. 
+3.	Dilution of the sample will depend on how many zoox there are- start with a 1:1 dilution of the zoox sample and filtered seawater (100 uL homogenate, 100 uL of seawater) 
+** Try to find a 19-24 gauge hypodermic needle to further separate the zoox cells, draw the sample into and out of the needle multiple times, if you can’t find a needle/syringe skip this step, but there may be clumping 
+
+![](/protocols/vortex_genie.jpg)
+
+caption: Vortexing zoox count sample with vortex genie.  
+
+
+![](/protocols/homogenize.jpg)
+
+caption: Resuspending zoox count sample with electric homogenizer. 
+
+
+![](/protocols/hypo_needle.jpg)
+
+caption: Drawing sample in and out of hypodermic needle to further separate zoox cells. 
+
+
+4.	Follow the protocol described in the link for counting cells  
+5.	Dilute the sample as necessary so you are counting between 125-200 cells per “count”. You should have ~25 zoox cells per quadrant (this is for efficiency, so it doesn’t take you forever to count hundreds of cells) 
+6.	Keep track of the dilution you use- this is necessary for cell calculations 
+
+
+### 2. Count the zoox
+
+7.	Load the hemocytomter with 10 uL of the diluted sample;
+Cell Counting With a Hemocytometer: As Easy as 1, 2, 3... 
+To read an overview of counting cells with a hemocytometer. It wouldn’t hurt to look up some of the youtube videos as well. 
+8.	Do 6 counts per coral fragment- one ‘count’ is the total number of cells counted across the 5 quadrants in one grid (one side of the hemocytometer)- these are quadrants C,D,B,E,F in the image below 
+9.	The hemocytometer has two grids- so you’ll get two counts per slide. You’ll need to do 3 slides to get the 6 counts per fragment. 
+
+![](/protocols/hemocytometer.jpg)
+
+caption: Loading hemocytometer with diluted algae sample. 
+
+
+### 3. Check your numbers 
+
+10.	Calculate your cell densities 
+11.	Look up a couple papers that have zoox counts for respective corals from the region of interest and see that your counts are roughly comparable- this ensures you’re doing the dilution and calculation correctly 
+
+
+

@@ -1,0 +1,57 @@
+---
+title: "Team"
+---
+
+
+::: {layout-ncol=3}
+![](/img/PR_icecream.JPG)
+
+![](/img/lab_pics.jpeg)
+
+![](/img/rainbows.jpeg)
+:::
+
+---
+
+Currently in the lab:
+
+--- 
+
+![](/img/noellefinn.jpeg){.float-left}
+Originally I'm from a small town in the middle of New Hampshire, US.  My formal training includes a master’s in marine policy from the University of Miami RSMAS and a Ph.D. in marine ecology and evolution through a collaborative MARES doctoral program between the University of Plymouth (UK) and University of Pavia (Italy). My experiences, woven between academia and policy, gave me the opportunity to meet people from around the world. 
+
+Favorite things to do are exploring, interacting with marine animals, working with glass to make art, and inspiring people to love the ocean. I am an avid hiker and dog mom.
+
+---
+
+![](jon1.jpg){.float-right}
+
+Jonathan Burnap is from Richmond, Virginia, and a graduate of Virginia Tech with a bachelor's in environmental science. He is studying how different coral reef fish species' tolerances are when it comes to the combined pressure of warming and low oxygen.  He is monitoring the reef fish of La Parguera and running lab-based physiology assays to provide novel data that will set the stage for us to understand  what aspects of reef fish communities are going to deteriorate first with continued extreme ocean weather.  He is also very much at home underwater and likes to spend his free time outdoors by running, golfing, hiking, and more. 
+
+---
+
+![](caro_photo.jpeg){.float-left}
+
+
+Carolina César Ávila is originally from La Chorrera, Panama, and has a background in Marine Biology from the International Maritime University of Panama. Before joining the lab in August 2025, Carolina worked as a Research Technician in the Smithsonian's Tropical Research Institute, Bocas del Toro, for the Marine GEO Network. Carolina is passionate about coral reef ecosystems; her research interest explores how compound extreme events affect coral physiology. She enjoys diving, photography, longboarding, birdwatching, and spending time with her cat in her free time.
+ 
+<br>
+  
+
+---
+
+![](mariela.JPG){.float-right}
+
+Mariela Cortes Medina</em> graduated from the University of Puerto Rico Mayaguez with a bachelor's in biology. Previously, she's worked with the Laboratorio de Ecología y Conservación de Vida Silvestre helping with different projects. In her free time, she enjoys doing crafts, having creative projects and spending time in nature from river and beach days to hikes. Her research interests focus on marine 
+conservation in macro-organisms and ecology.
+
+
+
+---
+
+
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">Prospective students, postdocs or volunteers? Click here! </a>
+</div>
+```

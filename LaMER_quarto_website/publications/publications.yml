@@ -1,0 +1,130 @@
+# Publications list — edit this file to add or update papers.
+# Fields: authors, year, title, journal, number (vol/issue/pages), doi, url (optional)
+# Use **Your Name** to bold your name in the authors string.
+
+- authors: "KW Johnson, R van Oostveen, RM van der Zande, **NM Lucey**, V Schoepf"
+  year: 2025
+  title: "Compound hypoxia with heat or acidification stress induces synergistic and additive effects on coral physiology"
+  journal: "openRxiv"
+  doi: "10.64898/2025.12.01.690742"
+
+- authors: "**N Lucey**, C César-Ávila, A Eckert, P Veintimilla, R Collin"
+  year: 2025
+  title: "Locally adapted coral species withstand a 2-week hypoxic event"
+  journal: "Oceans"
+  number: "6(1), 5"
+  doi: "10.3390/oceans6010005"
+
+- authors: "**NM Lucey**, C César-Ávila, A Eckert, A Rajagopalan, WC Brister, E Kline, AH Altieri, CA Deutsch, R Collin"
+  year: 2024
+  title: "Coral community composition linked to hypoxia exposure"
+  journal: "Global Change Biology"
+  number: "30(10)"
+  doi: "10.1111/gcb.17545"
+
+- authors: "MD Johnson, SG Klein, **N Lucey**, A Steckbauer, A Shore, EF Camp"
+  year: 2024
+  title: "Editorial: Drivers and consequences of ocean deoxygenation in tropical ecosystems"
+  journal: "Frontiers in Marine Science"
+  number: "11"
+  doi: "10.3389/fmars.2024.1425902"
+
+- authors: "C Deutsch, JL Penn, **N Lucey**"
+  year: 2024
+  title: "Climate, oxygen, and the future of marine biodiversity"
+  journal: "Annual Review of Marine Science"
+  number: "16(1), 217–245"
+  doi: "10.1146/annurev-marine-040323-095231"
+
+- authors: "**NM Lucey**, CA Deutsch, M-H Carignan, F Vermandele, M Collins, MD Johnson, R Collin, P Calosi"
+  year: 2023
+  title: "Climate warming erodes tropical reef habitat through frequency and intensity of episodic hypoxia"
+  journal: "PLOS Climate"
+  number: "2(3), e0000095"
+  doi: "10.1371/journal.pclm.0000095"
+
+- authors: "**N Lucey**, C Aube, A Herwig, R Collin"
+  year: 2022
+  title: "Compound extreme events induce rapid mortality in a tropical sea urchin"
+  journal: "The Biological Bulletin"
+  number: "243(2), 239–254"
+  doi: "10.1086/722283"
+
+- authors: "HA Woods, AL Moran, D Atkinson, A Audzijonyte, M Berenbrink, FO Borges, KG Burnett, LE Burnett, CJ Coates, R Collin, EM Costa-Paiva, MI Duncan, R Ern, EMJ Laetz, LA Levin, M Lindmark, **NM Lucey**, LR McCormick, JJ Pierson, R Rosa, MR Roman, E Sampaio, PM Schulte, EA Sperling, A Walczyńska, WCE Verberk"
+  year: 2022
+  title: "Integrative approaches to understanding organismal responses to aquatic deoxygenation"
+  journal: "The Biological Bulletin"
+  number: "243(2), 85–103"
+  doi: "10.1086/722899"
+
+- authors: "**NM Lucey**, E Haskett, R Collin"
+  year: 2021
+  title: "Hypoxia from depth shocks shallow tropical reef animals"
+  journal: "Climate Change Ecology"
+  number: "2, 100010"
+  doi: "10.1016/j.ecochg.2021.100010"
+
+- authors: "B Figuerola, EL Grossman, **N Lucey**, ND Leonard, A O'Dea"
+  year: 2021
+  title: "Millennial-scale change on a Caribbean reef system that experiences hypoxia"
+  journal: "Ecography"
+  number: "44(9), 1270–1282"
+  doi: "10.1111/ecog.05606"
+
+- authors: "**N Lucey**, MD Johnson, JJ Scott, M Leray, LM Rodriguez Bravo, WL Wied, AH Altieri"
+  year: 2021
+  title: "Rapid ecosystem-scale consequences of acute deoxygenation on a Caribbean coral reef"
+  journal: "Nature Communications"
+  doi: "10.1038/s41467-021-24777-3"
+
+- authors: "MD Johnson, LM Rodriguez Bravo, **N Lucey**, AH Altieri"
+  year: 2021
+  title: "Environmental legacy effects and acclimatization of a crustose coralline alga to ocean acidification"
+  journal: "Climate Change Ecology"
+  number: "2, 100016"
+  doi: "10.1016/j.ecochg.2021.100016"
+
+- authors: "**N Lucey**, E Haskett, R Collin"
+  year: 2020
+  title: "Multi-stressor extremes found on a tropical coral reef impair performance"
+  journal: "Frontiers in Marine Science"
+  number: "7"
+  doi: "10.3389/fmars.2020.588764"
+
+- authors: "**NM Lucey**, M Collins, R Collin"
+  year: 2020
+  title: "Oxygen-mediated plasticity confers hypoxia tolerance in a corallivorous polychaete"
+  journal: "Ecology and Evolution"
+  number: "10(3), 1145–1157"
+  doi: "10.1002/ece3.5929"
+
+- authors: "LGE Wilkins, M Leray, A O'Dea, B Yuen, RS Peixoto, TJ Pereira, HM Bik, DA Coil, JE Duffy, EA Herre, HA Lessios, **NM Lucey**, LC Mejia, DB Rasher, KH Sharp, EM Sogin, RW Thacker, R Vega Thurber, WT Wcislo, EG Wilbanks, JA Eisen"
+  year: 2019
+  title: "Host-associated microbiomes drive structure and function of marine ecosystems"
+  journal: "PLOS Biology"
+  number: "17(11), e3000533"
+  doi: "10.1371/journal.pbio.3000533"
+
+- authors: "**NM Lucey**, C Lombardi, M Florio, L DeMarchi, M Nannini, S Rundle, MC Gambi, P Calosi"
+  year: 2016
+  title: "An in situ assessment of local adaptation in a calcifying polychaete from a shallow CO₂ vent system"
+  journal: "Evolutionary Applications"
+  number: "9(9), 1054–1071"
+
+- authors: "JT Mathis, SR Cooley, **N Lucey**, S Colt, J Ekstrom, T Hurst, C Hauri, W Evans, JN Cross, RA Feely"
+  year: 2015
+  title: "Ocean acidification risk assessment for Alaska's fishery sector"
+  journal: "Progress in Oceanography"
+  number: "136, 71–91"
+
+- authors: "**NM Lucey**, C Lombardi, L Demarchi, A Schulze, MC Gambi, P Calosi"
+  year: 2015
+  title: "To brood or not to brood: Are marine invertebrates that protect their offspring more resilient to ocean acidification?"
+  journal: "Scientific Reports"
+  number: "5"
+
+- authors: "SR Cooley, **N Lucey**, H Kite-Powell, SC Doney"
+  year: 2012
+  title: "Nutrition and income from molluscs today imply vulnerability to ocean acidification tomorrow"
+  journal: "Fish and Fisheries"
+  number: "13(2), 182–215"

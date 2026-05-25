@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Research – LaMER</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//img/logo_trans.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-69ea02176060f95c603da56787064043.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+</head><body class="nav-fixed quarto-light"><div id="google_translate_element"></div>
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+
+
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/logo_trans.png" alt="" class="navbar-logo light-content">
+    <img src="../img/logo_trans.png" alt="" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">LaMER</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../research/index.html" aria-current="page"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../team/index.html"> 
+<span class="menu-text">Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../courses/index.html"> 
+<span class="menu-text">Courses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../protocols/index.html"> 
+<span class="menu-text">Protocols</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/noellelucey.bsky.social"> <i class="bi bi-bluesky" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/lucey_lab/"> <i class="bi bi-instagram" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:mail.noelle.lucey@upr.edu"> <i class="bi bi-envelope" role="img" aria-label="email">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#current-projects" id="toc-current-projects" class="nav-link active" data-scroll-target="#current-projects">Current projects:</a>
+  <ul class="collapse">
+  <li><a href="#where-can-reef-fish-breath" id="toc-where-can-reef-fish-breath" class="nav-link" data-scroll-target="#where-can-reef-fish-breath">1. Where can reef fish breath?</a></li>
+  <li><a href="#spongia-to-the-rescue-farming-a-clean-up-crew-for-reefs" id="toc-spongia-to-the-rescue-farming-a-clean-up-crew-for-reefs" class="nav-link" data-scroll-target="#spongia-to-the-rescue-farming-a-clean-up-crew-for-reefs">2. Spongia to the rescue: farming a clean up crew for reefs</a></li>
+  <li><a href="#physiological-drivers-of-marine-biodiversity" id="toc-physiological-drivers-of-marine-biodiversity" class="nav-link" data-scroll-target="#physiological-drivers-of-marine-biodiversity">3. Physiological drivers of marine biodiversity</a></li>
+  <li><a href="#reef-roving-robots-assess-biodiversity-changes" id="toc-reef-roving-robots-assess-biodiversity-changes" class="nav-link" data-scroll-target="#reef-roving-robots-assess-biodiversity-changes">4. Reef roving robots assess biodiversity changes</a></li>
+  <li><a href="#how-compound-extreme-events-impact-reef-metabolism" id="toc-how-compound-extreme-events-impact-reef-metabolism" class="nav-link" data-scroll-target="#how-compound-extreme-events-impact-reef-metabolism">5. How compound extreme events impact reef metabolism</a></li>
+  </ul></li>
+  <li><a href="#past-projects" id="toc-past-projects" class="nav-link" data-scroll-target="#past-projects">Past projects:</a>
+  <ul class="collapse">
+  <li><a href="#hypoxic-stress-drives-coral-degradation" id="toc-hypoxic-stress-drives-coral-degradation" class="nav-link" data-scroll-target="#hypoxic-stress-drives-coral-degradation">1. Hypoxic stress drives coral degradation</a></li>
+  <li><a href="#coastal-deoxygenation-destabilizes-marine-communities" id="toc-coastal-deoxygenation-destabilizes-marine-communities" class="nav-link" data-scroll-target="#coastal-deoxygenation-destabilizes-marine-communities">2. Coastal deoxygenation destabilizes marine communities</a></li>
+  <li><a href="#hypoxia-kills-corals" id="toc-hypoxia-kills-corals" class="nav-link" data-scroll-target="#hypoxia-kills-corals">3. Hypoxia kills corals:</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Research</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>Broadly, our research asks a simple but urgent question: How does climate change reshape life in the ocean? To answer this, we investigate how climate change impacts the physiology of tropical marine ectotherms <em>a.k.a. cold-blooded animals.</em></p>
+<p>We are trying to understand how their responses change across time and space, how they scale-up to impact entire ecosystems, and how they can be transformed into applications based on restorative aquaculture and nature-based solutions.</p>
+<section id="current-projects" class="level1">
+<h1>Current projects:</h1>
+<section id="where-can-reef-fish-breath" class="level2">
+<h2 class="anchored" data-anchor-id="where-can-reef-fish-breath">1. Where can reef fish breath?</h2>
+<p>Global warming is intensifying ocean deoxygenation and increasing the metabolic rates of most aerobic animals, including fish. If environmental conditions fall below the oxygen level in which aerobic respiration can no longer be maintained, termed the critical oxygen threshold (pO<sub>2</sub><sup>crit</sup>), for any extended duration, the fish will not be able to breathe and thus cannot inhabit that environment.</p>
+<p>This project is documenting the metabolic habitability of Caribbean reefs by determining if they meet the oxygen demands of coral reef fish.</p>
+<p>This is done in two parts:</p>
+<ol type="1">
+<li>To understand fishes’ oxygen needs under warming, we are collecting and testing the hypoxia tolerance (pO<sub>2</sub><sup>crit</sup>) of the herbivorous Longfin Damselfish, <em>Stegastes diencaeus</em>, the Stoplight Parrotfish, <em>Sparisoma viride</em>, and the predatory Mutton Snapper, <em>Lutjanus analis</em> across a 10-degree temperature range.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/fish.jpeg" class="img-fluid figure-img"></p>
+<figcaption>Damsel in respirometry chamber</figcaption>
+</figure>
+</div>
+<p>Also, we are assessing their oxygen demand while swimming:</p>
+<video src="/img/gom_fish_video.mov" controls="" muted="">
+<p>Assessing fish respiration and hypoxia tolerance under activity.</p>
+</video>
+<hr>
+<ol start="2" type="1">
+<li>To understand ambient oxygen variability on reefs over time, we are measuring hourly temperature and oxygen levels across reefs in Puerto Rico.</li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/logger.jpg" class="img-fluid figure-img"></p>
+<figcaption>Hobo Onset O<sub>2</sub> and temperature logger on Enrique Reef</figcaption>
+</figure>
+</div>
+<p>We are linking species’ oxygen demands to these environmental conditions measured on reefs (demand vs.&nbsp;supply), to see how habitability is shaped by metabolic limits of reef fish. Will projected changes in environmental conditions disrupt the ecological dynamics of tropical fish communities as warming and oxygen loss intensify on tropical reefs?</p>
+<p>Collaborators: Jonathan Burnap, Juan J. Cruz-Motta, Justin Penn, Noelle Lucey</p>
+<hr>
+</section>
+<section id="spongia-to-the-rescue-farming-a-clean-up-crew-for-reefs" class="level2">
+<h2 class="anchored" data-anchor-id="spongia-to-the-rescue-farming-a-clean-up-crew-for-reefs">2. Spongia to the rescue: farming a clean up crew for reefs</h2>
+<p>Nature-based aquaculture solutions using marine sponges. - Growing marine sponges and quantifying how well they clean up nutrient pollution from coral reefs</p>
+<p>Porifera, a phylum of filtering marine organisms, includes a commercially valuable genus of bath sponges known as Spongia. In the 1980’s Spongia spp. were declared locally extinct in Puerto Rico (PR), but we recently found evidence that the genus has reestablished its population in the southwest region of La Parguera.</p>
+<p>Now we are exploring their application as a nature-based solution to address eutrophication on tropical reefs - a growing threat without any real solutions. This includes <em>in situ</em> experimental work to understand their tolerance for marine heatwaves and hypoxia from sargassum inundation events (SIE).</p>
+<p>We are also gathering baseline physiological data in the lab to quanitify their growth rates, filtration rates, and capacity to remove different types of organic nutrients from their environment. This will help us to understand the application of bath sponges as a nature-based solution to reduce organic nutrients, eutrophication and low oxygen on shallow tropical coral reef ecosystems that are being restored in PR.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/spongia.jpeg" class="img-fluid figure-img"></p>
+<figcaption><em>Spongia tubulifera</em> specimen from Isla Mayaguez, La Parguera PR</figcaption>
+</figure>
+</div>
+<p>Collaborators: Mariela Cortes, Jan and Vance Vicente, Bernice Pauahi Bishop Museum, Honolulu, HI*</p>
+<hr>
+</section>
+<section id="physiological-drivers-of-marine-biodiversity" class="level2">
+<h2 class="anchored" data-anchor-id="physiological-drivers-of-marine-biodiversity">3. Physiological drivers of marine biodiversity</h2>
+<p>In marine ecosystems, the abiotic variables dictating habitability must include increased warming as well as reduced oxygen. This is because oxygen is rapidly declining in all oceanic systems as the planet warms. And these climatic variables impact biotic variables: rising temperatures increase the metabolic rates and oxygen demand of most animals. To accurately predict where species can live in our changing oceans, we must account for changing oxygen dynamics, temperature, and species-specific physiological limits.</p>
+<p>By combining species’ physiology, animal behavior with oceanographic monitoring, my past work has demonstrated how species’ range boundaries are changing on Caribbean coral reefs, in other words, metabolic restrictions on activity trigger tropical biodiversity loss and reduced habitability for an abundant and diverse group of marine invertebrates, ophiuroids:</p>
+<video src="/img/Feeding_O.cinereum.mp4" controls="" muted="" width="70%">
+<p>Feeding O. cinereum pushed out of reef habitat due to episodic hypoxia.</p>
+</video>
+<p><br></p>
+<p>Now, in partnership with Smithsonian Institution’s MarineGEO network, we are understanding how these physiologcal limits differ across gradients of marine biodiversity. To start, we kicked off a long-term monitoring program using <a href="https://reeflifesurvey.com/">Reef Life Survey</a> methods, to document the cryptic and mobile reef fish and invertebrates across 12 reefs around La Parguera, Puerto Rico.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/Sharknose_goby.JPG" class="img-fluid figure-img"></p>
+<figcaption>Can you see the shark nose goby?</figcaption>
+</figure>
+</div>
+<p>This is a widely used and standardized approach that allows researchers around the world to assess abundance, biomass, and, importantly, the biodiversity of life on reefs. Because it is quality controlled and standardized, we can compare our data in PR to reefs all around the world.</p>
+<p>We will now begin linking our physiology-tolerance trait database to these diversity snapshots and see how physiology dictates biodiversity change through time.</p>
+<p>Collaborators: <a href="https://marinegeo.si.edu/about-us/what-we-do">Smithsonian’s MarineGEO Network</a></p>
+<hr>
+</section>
+<section id="reef-roving-robots-assess-biodiversity-changes" class="level2">
+<h2 class="anchored" data-anchor-id="reef-roving-robots-assess-biodiversity-changes">4. Reef roving robots assess biodiversity changes</h2>
+<p>Halting the rapid degradation of tropical marine ecosystems requires a mechanistic understanding of the causal drivers. However, observations of multiple stressors at the fine scales of heterogeneity in tropical ecosystems like coral reefs remain severely limited.</p>
+<p>Through a science-engineering collaborative, we are - designing and building - a new robotic ocean observing system that will continuously survey and stream high-resolution data into ecophysiological models that produce real-time vulnerability maps across the tropical reef ecosystems. This will provide a way for scientists to identify and ultimately forecast threats to ecosystem health in major hotspots of biodiversity.</p>
+<p>The project combines three major elements:</p>
+<ol type="1">
+<li>Building and deploying a novel open-source ocean robotic platform to autonomously sample high-resolution hydrographic data from dynamic coastal systems throughout the world’s most biodiverse ecosystems (Testing to begin in La Parguera this September!)</li>
+<li>Deveveloping machine learning algorithms to relate the observed spatiotemporal variability of water properties to broader oceanic and meteorological conditions, and to map key stressors impacting these ecosystems</li>
+<li>Combining these data streams into a mechanistic trait-based habitat model to create real-time assessments and near-term forecasts of reef health threats, as well as projections of long-term vulnerability to climate change</li>
+</ol>
+<p>The synthesis of these novel and emerging technologies will provide ongoing diagnoses and forecasts of threats to tropical biodiversity, ultimately enabling their protection.</p>
+<p><img src="../img/PuertoRicoTrenchDeeperDetail.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open('https://arxiv.org/abs/2112.08866', 'blank');"></p>
+<p><a href="https://research.princeton.edu/news/four-innovative-projects-selected-2025-schmidt-transformative-technology-fund-awards">Press Release</a> | <a href="https://research.princeton.edu/news/four-innovative-projects-selected-2025-schmidt-transformative-technology-fund-awards" target="_blank"> SeaWASP</a><br></p>
+<p>Funding from: <a href="https://research.princeton.edu/resources/funding/dean-research-funding/eric-and-wendy-schmidt-transformative-technology-fund">Schmidt Transformative Technology Fund</a></p>
+<p>Collaborators: Jeremy Paulus (<a href="https://barreleyedesigns.com/">Barreleye Designs</a>), Curtis Deutsch (Princeton University) and Noelle Lucey</p>
+<hr>
+</section>
+<section id="how-compound-extreme-events-impact-reef-metabolism" class="level2">
+<h2 class="anchored" data-anchor-id="how-compound-extreme-events-impact-reef-metabolism">5. How compound extreme events impact reef metabolism</h2>
+<p>Coral metabolism may change under compound extreme weather events (warming × oxygen × acidification). These events include heat waves, deoxygenation events, and acidification episodes, often co-occur. They are also becoming increasingly intense and frequent on Caribbean coral reefs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/wedge.jpg" class="img-fluid figure-img"></p>
+<figcaption>The wedge: warming increases O<sub>2</sub> variability. Bivariate frequency distribution of temperature and oxygen, from one decade of weekly daytime sampling. Colors represent the total number of times each temperature and oxygen combination in measurements (panel a) during the 10-y sampling period, and statistically modelled (panels b-d) from the measurements. Light yellow colors indicate low occurrences or rare conditions and red colors indicate common, frequent (i.e., average) conditions. (c-d) Projected future bivariate frequency distributions assuming temperatures increase by 1 or 3 C, respectively. The frequency of stressful conditions (i.e., hypoxia exposure, Φ &lt; Φ<sub>crit</sub>) below the cyan and blue lines becomes more frequent as temperature rises.</figcaption>
+</figure>
+</div>
+<p>Yet, aside from heatwaves, how these other acute stressors impact the physiology of the reef-building, endangered species <em>Orbicella faveolata</em> has not been studied.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/treatments_frags.png" class="img-fluid figure-img"></p>
+<figcaption>Experimental Design with Carolina Cesar and Nicole Foldi</figcaption>
+</figure>
+</div>
+<p>This summer we are performing a series of short-term multistressor manipulation experiments to examine each stressor individually, and in combination, to determine what is most detrimental to both the host and its symbionts of <em>O. faveolata</em> from reefs in La Parguera, Puerto Rico.</p>
+<p>We will be assessing how fragments exposed to these stressors respond via bleaching, oxygen consumption (dark respiration), photosynthetic rates, symbiont density, and transcriptomics.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/coral_sponge.JPG" class="img-fluid figure-img"></p>
+<figcaption><em>Orbecella faveolata</em> in La Parguera</figcaption>
+</figure>
+</div>
+<p>Our anticipated findings will help us understand which threats or threat-combinations from compound extreme events on Caribbean coral reefs we need to worry about most. We will be using our results to directly inform coral restoration plans.</p>
+<p>Collaborators: Carolina Cesar, Nicole Foldi, Nick Schizas, Noelle Lucey</p>
+<hr>
+</section>
+</section>
+<section id="past-projects" class="level1">
+<h1>Past projects:</h1>
+<section id="hypoxic-stress-drives-coral-degradation" class="level2">
+<h2 class="anchored" data-anchor-id="hypoxic-stress-drives-coral-degradation">1. Hypoxic stress drives coral degradation</h2>
+<p>The global decline in coral reef health is primarily attributed to rising ocean temperatures, but the role of low O<sub>2</sub> is poorly known. We diagnosed drivers of coral degradation on six Caribbean reefs in the Bocas del Toro, Panama archipelago by combining two years of hourly temperature and O<sub>2</sub> field data with measured physiological traits for eight coral species.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/Fig_1.png" class="img-fluid figure-img"></p>
+<figcaption>Coral reef near Bocas del Toro, Panama severely bleaches after episodic nightly low oxygen, not warming. a Healthy patch of branching A. cervicornis (foreground) at Coral Cay reef at 3 m on July 30th, 2022. b Severe bleaching throughout this site was first observed on March 23rd, 2023 (Bleaching score; B = 95%). Two weeks later all afflicted corals were found dead with turf and macroalgae growing on coral skeletons (photographed on May 4). c Temperature and d O<sub>2</sub> partial pressure (pO<sub>2</sub>) recorded every hour (y-axes) of every day (x-axes) between Oct.&nbsp;2022 - May 2023 at this site. In the two weeks before the initial bleaching observation (March 23rd; dashed black lines), pO<sub>2</sub> was unusually low in the late night-early morning (0.05-0.10 atm; &lt;50% saturation; dark blue vertical banding left of the dashed black line), whereas temperature in the previous three months was well within a non-stressful range. At pO₂ = 0.21 atm, seawater oxygen is in equilibrium with the atmosphere, representing the normoxic baseline.</figcaption>
+</figure>
+</div>
+<p>We found the severity of bleaching and mortality was strongly related to the duration and intensity of exposure to O<sub>2</sub> levels below species’ temperature-dependent metabolic demands. Coral sensitivity to hypoxic stress was consistent across both laboratory experiments and field observations.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../img/Fig_6.png" class="img-fluid figure-img"></p>
+<figcaption>Hypoxia exposure predicts bleaching response on coral reefs. The relationship between bleaching severity (%) and hypoxic exposure Ehyp (Φcrit hours) preceding each coral bleaching observation in a Acropora cervicornis and b Siderastrea siderea. Exposure is calculated for each of the 23 in situ bleaching observations using species’ physiological traits and hourly pO<sub>2</sub> and temperature measured across 21 reef locations, at six distinct reefs from depths between 3-15 m during 2021-2023 (circles). For comparison, the trait-based exposure metric (Ehyp) is also calculated from laboratory bleaching experiments with chronic and intermittent hypoxia (upward triangles) and temperature treatments (downward triangles). Symbol colors indicate the recency-weighted mean temperature leading up to each observation (field), or experimental treatment temperature (lab) with the color scale centered at the regional average (29.5C).</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="coastal-deoxygenation-destabilizes-marine-communities" class="level2">
+<h2 class="anchored" data-anchor-id="coastal-deoxygenation-destabilizes-marine-communities">2. Coastal deoxygenation destabilizes marine communities</h2>
+<p>Climate change is disproportionately impacting coastal marine ecosystems through complex interactive multiple stressors. Microbes are without a doubt important in these coastal systems, yet the microbial ecology of many marine systems is still poorly understood. Our research aims to address pressing questions regarding which microbial assemblages are correlated to broad-scale ecosystem shifts in coastal habitats. We measured environmental oxygen, temperature, and pH weekly over the course of a year at four shallow sites (~20 m) along a natural ~15 km gradient in a Caribbean Bay. In addition to environmental parameters, we collected weekly sediment samples and determined the abundance and diversity of both the macrofauna and microbial communities (16S rRNA) throughout the year. At sites with severe deoxygenation (compared to more normoxic sites), we find a strong relationship between reduced macrofaunal abundance and diversity, as well as significant increases in microbial community instability. Using an integrative time-series approach we identify specific oxygen thresholds that appear to underpin changes in both macro- and micro- benthic diversity. Through space and time oxygen stress plays an extreme role in community destabilization.</p>
+<p>On reefs, hypoxia leading to bleaching and mortality was primarily associated with short episodes of low O<sub>2</sub>, albeit exacerbated by high temperatures a third of the time. While these combined coral stressors threaten reef ecosystems, they can be mitigated through coastal hypoxia management and climate stabilization.</p>
+<div style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://tropical-repo.github.io/trepo-summary.html" role="button" target="_blank" style="padding: 15px 30px;">TREPO Project Code</a>
+</div>
+<hr>
+</section>
+<section id="hypoxia-kills-corals" class="level2">
+<h2 class="anchored" data-anchor-id="hypoxia-kills-corals">3. Hypoxia kills corals:</h2>
+<p>Here we present the first account of an unfolding hypoxia event on a Caribbean coral reef, documenting the environmental parameters associated with the event that occurred in September 2017 and subsequent impacts on the ecosystem. We provide the first quantitative evidence that hypoxic events can precipitate coral bleaching and lead to dramatic shifts in reef benthic community structure that persist over time. We also describe how the microbial community overlying the reef benthos (~1 m above the seafloor) had a unique taxonomic fingerprint in hypoxic waters that dissipated with the return of oxygenated water.</p>
+<p>Together our study demonstrates the catastrophic implications of a hypoxic event on multiple aspects of the coral reef ecosystems, from coral physiology to microbial community structure. Our results have alarming implications for coral reefs in an age where deoxygenation is accelerating rapidly. In order to truly understand how local and global environmental changes will affect the persistence of coral reefs into the future, ocean deoxygenation must be accounted for and incorporated into monitoring and managements frameworks.</p>
+<div style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://hypocolypse.github.io/" role="button" target="_blank" style="padding: 15px 30px;">Hypocolypes code</a>
+</div>
+<p>More coming soon as I fix up the website ;) ..</p>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p><span class="faux-block">© 2026 Noelle Lucey CC BY-SA 4.0</span></p>
+</div>   
+    <div class="nav-footer-center">
+<p><span class="faux-block">Built with <a href="https://quarto.org/">Quarto</a></span></p>
+</div>
+    <div class="nav-footer-right">
+<p><span class="faux-block"><a href="https://github.com/LaMER-group/LaMER">View source on GitHub</a></span></p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>

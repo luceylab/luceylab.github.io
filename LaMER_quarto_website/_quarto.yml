@@ -1,0 +1,77 @@
+website:
+  title: "LaMER"     
+  description: "Lucey Laboratory of Marine Ecophysiology and Resilience"   # A brief slogan (optional)
+  favicon: /img/logo_trans.png
+  
+  # start of the navigation bar at the top of the website
+  navbar:
+    pinned: true
+    logo: /img/logo_trans.png
+  
+    # your sub-pages
+    left:
+     #  href: about/index.qmd
+      - text: "Research"
+        href: research/index.qmd
+      - text: "Team"
+        href: team/index.qmd
+      - text: "Publications"
+        href: publications/index.qmd
+      - text: "Courses"
+        href: courses/index.qmd
+      - text: "Protocols"
+        href: protocols/index.qmd
+      - text: "CV"
+        href: cv/index.qmd
+    
+    # your social media handles
+    right:
+      - icon: bluesky
+        href: https://bsky.app/profile/noellelucey.bsky.social
+      - icon: instagram
+        href: https://www.instagram.com/lucey_lab/
+      - icon: envelope
+        aria-label: email
+        href: "mailto:mail.noelle.lucey@upr.edu"  
+  
+  
+
+# Don't touch unless you know what you are doing :) ------------
+  search: 
+    location: navbar
+    type: textbox
+  page-footer:
+    left: |
+      <span class="faux-block">&#169; 2026 Noelle Lucey CC BY-SA 4.0</span>
+    center: |
+      <span class="faux-block">Built with <a href="https://quarto.org/">Quarto</a></span>
+    right: |
+      <span class="faux-block"><a href="https://github.com/LaMER-group/LaMER">View source on GitHub</a></span>
+
+project:
+  type: website
+  output-dir: docs
+
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
+
+execute:
+  freeze: true
+
+format:
+  html:
+    fontsize: 1.1em
+    theme: 
+      - pulse
+      - html/styles.scss
+    toc: false
+    toc-title: "Contents"
+    code-link: true
+    anchor-sections: true
+    fig-cap-location: bottom
+    reference-location: margin
+    footnotes-hover: true
+    include-in-header: translate.html

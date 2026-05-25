@@ -1,0 +1,20 @@
+---
+layout: page
+title: Protocols
+---
+
+::: {.callout-note collapse="true"}
+## Zooxanthellae Counts
+{{< include zooxanthellae-protocol/zooxanthellae_protocol.qmd >}}
+:::
+
+::: {.callout-note collapse="true"}
+## PAM protocol
+{{< include pam-protocol/PAM-Protocol.qmd >}}
+:::
+
+::: {.callout-note collapse="true"}
+## Mean Intensity Gray Bleaching Analysis
+{{< include MIG-protocol/MIGprotocol.qmd >}}
+:::
+

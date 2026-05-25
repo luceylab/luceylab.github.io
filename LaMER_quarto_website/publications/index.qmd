@@ -1,0 +1,73 @@
+---
+title: "Publications"
+format:
+  html:
+    toc: false
+    css: publications.css
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+library(yaml)
+library(dplyr)
+library(glue)
+```
+
+```{r}
+#| label: render-pubs
+#| output: asis
+
+pubs <- yaml::read_yaml("publications.yml")
+
+# Group by year (descending)
+years <- sort(unique(sapply(pubs, `[[`, "year")), decreasing = TRUE)
+
+for (yr in years) {
+  cat(glue("\n\n## {yr}\n\n"))
+
+  yr_pubs <- Filter(function(p) p$year == yr, pubs)
+
+  for (p in yr_pubs) {
+    journal_part <- if (!is.null(p$journal) && p$journal != "") {
+      glue("*{p$journal}*")
+    } else {
+      ""
+    }
+
+    number_part <- if (!is.null(p$number) && p$number != "") {
+      glue(", {p$number}")
+    } else {
+      ""
+    }
+
+    # Build link: prefer DOI, then url, then nothing
+    link_part <- if (!is.null(p$doi) && p$doi != "") {
+      glue(" <a href='https://doi.org/{p$doi}' target='_blank' class='scholar-link'>↗ DOI</a>")
+    } else if (!is.null(p$url) && p$url != "") {
+      glue(" <a href='{p$url}' target='_blank' class='scholar-link'>↗ Link</a>")
+    } else {
+      ""
+    }
+
+    preprint_part <- if (!is.null(p$preprint) && p$preprint != "") {
+      glue(" <a href='{p$preprint}' target='_blank' class='scholar-link'>↗ Preprint</a>")
+    } else {
+      ""
+    }
+
+    cat(glue(
+      "<div class='pub-entry'>\n",
+      "<p class='pub-authors'>{p$authors} ({p$year}).</p>\n",
+      "<p class='pub-title'>{p$title}</p>\n",
+      "<p class='pub-meta'>{journal_part}{number_part}.{link_part}{preprint_part}</p>\n",
+      "</div>\n\n"
+    ))
+  }
+}
+```

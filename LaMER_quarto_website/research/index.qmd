@@ -1,0 +1,174 @@
+---
+title: Research
+toc: true
+toc-depth: 3
+---
+
+Broadly, our research asks a simple but urgent question: How does climate change reshape life in the ocean? To answer this, we investigate how climate change impacts the physiology of tropical marine ectotherms *a.k.a. cold-blooded animals.*
+
+We are trying to understand how their responses change across time and space, how they scale-up to impact entire ecosystems, and how they can be transformed into applications based on restorative aquaculture and nature-based solutions.
+
+# Current projects:
+
+## 1. Where can reef fish breath?
+
+Global warming is intensifying ocean deoxygenation and increasing the metabolic rates of most aerobic animals, including fish. If environmental conditions fall below the oxygen level in which aerobic respiration can no longer be maintained, termed the critical oxygen threshold (pO~2~^crit^), for any extended duration, the fish will not be able to breathe and thus cannot inhabit that environment.
+
+This project is documenting the metabolic habitability of Caribbean reefs by determining if they meet the oxygen demands of coral reef fish.
+
+This is done in two parts:
+
+1.  To understand fishes' oxygen needs under warming, we are collecting and testing the hypoxia tolerance (pO~2~^crit^) of the herbivorous Longfin Damselfish, *Stegastes diencaeus*, the Stoplight Parrotfish, *Sparisoma viride*, and the predatory Mutton Snapper, *Lutjanus analis* across a 10-degree temperature range.
+
+![Damsel in respirometry chamber](/img/fish.jpeg)
+
+Also, we are assessing their oxygen demand while swimming:
+
+<video src="/img/gom_fish_video.mov" controls muted>
+
+Assessing fish respiration and hypoxia tolerance under activity.
+
+</video>
+
+------------------------------------------------------------------------
+
+2.  To understand ambient oxygen variability on reefs over time, we are measuring hourly temperature and oxygen levels across reefs in Puerto Rico.
+
+![Hobo Onset O~2~ and temperature logger on Enrique Reef](/img/logger.jpg)
+
+We are linking species’ oxygen demands to these environmental conditions measured on reefs (demand vs. supply), to see how habitability is shaped by metabolic limits of reef fish. Will projected changes in environmental conditions disrupt the ecological dynamics of tropical fish communities as warming and oxygen loss intensify on tropical reefs?
+
+Collaborators: Jonathan Burnap, Juan J. Cruz-Motta, Justin Penn, Noelle Lucey
+
+---
+
+## 2. Spongia to the rescue: farming a clean up crew for reefs
+
+Nature-based aquaculture solutions using marine sponges. - Growing marine sponges and quantifying how well they clean up nutrient pollution from coral reefs
+
+Porifera, a phylum of filtering marine organisms, includes a commercially valuable genus of bath sponges known as Spongia. In the 1980’s Spongia spp. were declared locally extinct in Puerto Rico (PR), but we recently found evidence that the genus has reestablished its population in the southwest region of La Parguera.
+
+Now we are exploring their application as a nature-based solution to address eutrophication on tropical reefs - a growing threat without any real solutions. This includes *in situ* experimental work to understand their tolerance for marine heatwaves and hypoxia from sargassum inundation events (SIE).
+
+We are also gathering baseline physiological data in the lab to quanitify their growth rates, filtration rates, and capacity to remove different types of organic nutrients from their environment. This will help us to understand the application of bath sponges as a nature-based solution to reduce organic nutrients, eutrophication and low oxygen on shallow tropical coral reef ecosystems that are being restored in PR.
+
+![*Spongia tubulifera* specimen from Isla Mayaguez, La Parguera PR](/img/spongia.jpeg)
+
+Collaborators: Mariela Cortes, Jan and Vance Vicente, Bernice Pauahi Bishop Museum, Honolulu, HI\*
+
+---
+
+## 3. Physiological drivers of marine biodiversity
+
+In marine ecosystems, the abiotic variables dictating habitability must include increased warming as well as reduced oxygen. This is because oxygen is rapidly declining in all oceanic systems as the planet warms. And these climatic variables impact biotic variables: rising temperatures increase the metabolic rates and oxygen demand of most animals. To accurately predict where species can live in our changing oceans, we must account for changing oxygen dynamics, temperature, and species-specific physiological limits.
+
+By combining species’ physiology, animal behavior with oceanographic monitoring, my past work has demonstrated how species’ range boundaries are changing on Caribbean coral reefs, in other words, metabolic restrictions on activity trigger tropical biodiversity loss and reduced habitability for an abundant and diverse group of marine invertebrates, ophiuroids:
+
+<video src="/img/Feeding_O.cinereum.mp4" controls muted width="70%">
+
+Feeding O. cinereum pushed out of reef habitat due to episodic hypoxia.
+
+</video>
+
+</br>
+
+Now, in partnership with Smithsonian Institution's MarineGEO network, we are understanding how these physiologcal limits differ across gradients of marine biodiversity. To start, we kicked off a long-term monitoring program using [Reef Life Survey](https://reeflifesurvey.com/) methods, to document the cryptic and mobile reef fish and invertebrates across 12 reefs around La Parguera, Puerto Rico.
+
+![Can you see the shark nose goby?](/img/Sharknose_goby.JPG)
+
+This is a widely used and standardized approach that allows researchers around the world to assess abundance, biomass, and, importantly, the biodiversity of life on reefs. Because it is quality controlled and standardized, we can compare our data in PR to reefs all around the world.
+
+We will now begin linking our physiology-tolerance trait database to these diversity snapshots and see how physiology dictates biodiversity change through time.
+
+Collaborators: [Smithsonian's MarineGEO Network](https://marinegeo.si.edu/about-us/what-we-do)
+
+---
+
+## 4. Reef roving robots assess biodiversity changes
+
+Halting the rapid degradation of tropical marine ecosystems requires a mechanistic understanding of the causal drivers. However, observations of multiple stressors at the fine scales of heterogeneity in tropical ecosystems like coral reefs remain severely limited.
+
+Through a science-engineering collaborative, we are - designing and building - a new robotic ocean observing system that will continuously survey and stream high-resolution data into ecophysiological models that produce real-time vulnerability maps across the tropical reef ecosystems. This will provide a way for scientists to identify and ultimately forecast threats to ecosystem health in major hotspots of biodiversity.
+
+The project combines three major elements:
+
+1.  Building and deploying a novel open-source ocean robotic platform to autonomously sample high-resolution hydrographic data from dynamic coastal systems throughout the world’s most biodiverse ecosystems (Testing to begin in La Parguera this September!)
+2.  Deveveloping machine learning algorithms to relate the observed spatiotemporal variability of water properties to broader oceanic and meteorological conditions, and to map key stressors impacting these ecosystems
+3.  Combining these data streams into a mechanistic trait-based habitat model to create real-time assessments and near-term forecasts of reef health threats, as well as projections of long-term vulnerability to climate change
+
+The synthesis of these novel and emerging technologies will provide ongoing diagnoses and forecasts of threats to tropical biodiversity, ultimately enabling their protection.
+
+<img src="/img/PuertoRicoTrenchDeeperDetail.jpg" style="height: 100%; width: 100%; object-fit: contain" onclick="window.open(&apos;https://arxiv.org/abs/2112.08866&apos;, &apos;blank&apos;);"/>
+
+<a href="https://research.princeton.edu/news/four-innovative-projects-selected-2025-schmidt-transformative-technology-fund-awards">Press Release</a> \| <a href="https://research.princeton.edu/news/four-innovative-projects-selected-2025-schmidt-transformative-technology-fund-awards" target="_blank"> SeaWASP</a><br>
+
+
+Funding from: [Schmidt Transformative Technology Fund](https://research.princeton.edu/resources/funding/dean-research-funding/eric-and-wendy-schmidt-transformative-technology-fund)
+
+Collaborators: Jeremy Paulus ([Barreleye Designs](https://barreleyedesigns.com/)), Curtis Deutsch (Princeton University) and Noelle Lucey
+
+---
+
+## 5. How compound extreme events impact reef metabolism
+
+Coral metabolism may change under compound extreme weather events (warming × oxygen × acidification). These events include heat waves, deoxygenation events, and acidification episodes, often co-occur. They are also becoming increasingly intense and frequent on Caribbean coral reefs.
+
+![The wedge: warming increases O~2~ variability. Bivariate frequency distribution of temperature and oxygen, from one decade of weekly daytime sampling. Colors represent the total number of times each temperature and oxygen combination in measurements (panel a) during the 10-y sampling period, and statistically modelled (panels b-d) from the measurements. Light yellow colors indicate low occurrences or rare conditions and red colors indicate common, frequent (i.e., average) conditions. (c-d) Projected future bivariate frequency distributions assuming temperatures increase by 1 or 3 C, respectively. The frequency of stressful conditions (i.e., hypoxia exposure, Φ \< Φ~crit~) below the cyan and blue lines becomes more frequent as temperature rises.](/img/wedge.jpg)
+
+Yet, aside from heatwaves, how these other acute stressors impact the physiology of the reef-building, endangered species *Orbicella faveolata* has not been studied.
+
+![Experimental Design with Carolina Cesar and Nicole Foldi](/img/treatments_frags.png)
+
+This summer we are performing a series of short-term multistressor manipulation experiments to examine each stressor individually, and in combination, to determine what is most detrimental to both the host and its symbionts of *O. faveolata* from reefs in La Parguera, Puerto Rico.
+
+We will be assessing how fragments exposed to these stressors respond via bleaching, oxygen consumption (dark respiration), photosynthetic rates, symbiont density, and transcriptomics.
+
+![*Orbecella faveolata* in La Parguera](/img/coral_sponge.JPG)
+
+Our anticipated findings will help us understand which threats or threat-combinations from compound extreme events on Caribbean coral reefs we need to worry about most. We will be using our results to directly inform coral restoration plans.
+
+Collaborators: Carolina Cesar, Nicole Foldi, Nick Schizas, Noelle Lucey
+
+---
+
+# Past projects:
+
+## 1. Hypoxic stress drives coral degradation
+
+The global decline in coral reef health is primarily attributed to rising ocean temperatures, but the role of low O~2~ is poorly known. We diagnosed drivers of coral degradation on six Caribbean reefs in the Bocas del Toro, Panama archipelago by combining two years of hourly temperature and O~2~ field data with measured physiological traits for eight coral species.
+
+![Coral reef near Bocas del Toro, Panama severely bleaches after episodic nightly low oxygen, not warming. a Healthy patch of branching A. cervicornis (foreground) at Coral Cay reef at 3 m on July 30th, 2022. b Severe bleaching throughout this site was first observed on March 23rd, 2023 (Bleaching score; B = 95%). Two weeks later all afflicted corals were found dead with turf and macroalgae growing on coral skeletons (photographed on May 4). c Temperature and d O~2~ partial pressure (pO~2~) recorded every hour (y-axes) of every day (x-axes) between Oct. 2022 - May 2023 at this site. In the two weeks before the initial bleaching observation (March 23rd; dashed black lines), pO~2~ was unusually low in the late night-early morning (0.05-0.10 atm; \<50% saturation; dark blue vertical banding left of the dashed black line), whereas temperature in the previous three months was well within a non-stressful range. At pO₂ = 0.21 atm, seawater oxygen is in equilibrium with the atmosphere, representing the normoxic baseline.](/img/Fig_1.png)
+
+We found the severity of bleaching and mortality was strongly related to the duration and intensity of exposure to O~2~ levels below species’ temperature-dependent metabolic demands. Coral sensitivity to hypoxic stress was consistent across both laboratory experiments and field observations.
+
+![Hypoxia exposure predicts bleaching response on coral reefs. The relationship between bleaching severity (%) and hypoxic exposure Ehyp (Φcrit hours) preceding each coral bleaching observation in a Acropora cervicornis and b Siderastrea siderea. Exposure is calculated for each of the 23 in situ bleaching observations using species' physiological traits and hourly pO~2~ and temperature measured across 21 reef locations, at six distinct reefs from depths between 3-15 m during 2021-2023 (circles). For comparison, the trait-based exposure metric (Ehyp) is also calculated from laboratory bleaching experiments with chronic and intermittent hypoxia (upward triangles) and temperature treatments (downward triangles). Symbol colors indicate the recency-weighted mean temperature leading up to each observation (field), or experimental treatment temperature (lab) with the color scale centered at the regional average (29.5C).](/img/Fig_6.png)
+
+---
+
+## 2. Coastal deoxygenation destabilizes marine communities
+
+Climate change is disproportionately impacting coastal marine ecosystems through complex interactive multiple stressors. Microbes are without a doubt important in these coastal systems, yet the microbial ecology of many marine systems is still poorly understood. Our research aims to address pressing questions regarding which microbial assemblages are correlated to broad-scale ecosystem shifts in coastal habitats. We measured environmental oxygen, temperature, and pH weekly over the course of a year at four shallow sites (\~20 m) along a natural \~15 km gradient in a Caribbean Bay. In addition to environmental parameters, we collected weekly sediment samples and determined the abundance and diversity of both the macrofauna and microbial communities (16S rRNA) throughout the year. At sites with severe deoxygenation (compared to more normoxic sites), we find a strong relationship between reduced macrofaunal abundance and diversity, as well as significant increases in microbial community instability. Using an integrative time-series approach we identify specific oxygen thresholds that appear to underpin changes in both macro- and micro- benthic diversity. Through space and time oxygen stress plays an extreme role in community destabilization.
+
+On reefs, hypoxia leading to bleaching and mortality was primarily associated with short episodes of low O~2~, albeit exacerbated by high temperatures a third of the time. While these combined coral stressors threaten reef ecosystems, they can be mitigated through coastal hypoxia management and climate stabilization.
+
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://tropical-repo.github.io/trepo-summary.html" role="button" target="_blank" style="padding: 15px 30px;">TREPO Project Code</a>
+</div>
+```
+
+---
+
+## 3. Hypoxia kills corals:
+
+Here we present the first account of an unfolding hypoxia event on a Caribbean coral reef, documenting the environmental parameters associated with the event that occurred in September 2017 and subsequent impacts on the ecosystem. We provide the first quantitative evidence that hypoxic events can precipitate coral bleaching and lead to dramatic shifts in reef benthic community structure that persist over time. We also describe how the microbial community overlying the reef benthos (\~1 m above the seafloor) had a unique taxonomic fingerprint in hypoxic waters that dissipated with the return of oxygenated water.
+
+Together our study demonstrates the catastrophic implications of a hypoxic event on multiple aspects of the coral reef ecosystems, from coral physiology to microbial community structure. Our results have alarming implications for coral reefs in an age where deoxygenation is accelerating rapidly. In order to truly understand how local and global environmental changes will affect the persistence of coral reefs into the future, ocean deoxygenation must be accounted for and incorporated into monitoring and managements frameworks.
+
+```{=html}
+<div  style="margin: 30px; text-align: center;">
+<a class="btn btn-primary" href="https://hypocolypse.github.io/" role="button" target="_blank" style="padding: 15px 30px;">Hypocolypes code</a>
+</div>
+```
+
+More coming soon as I fix up the website ;) ..

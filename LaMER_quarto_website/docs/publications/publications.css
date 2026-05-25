@@ -1,0 +1,109 @@
+/* ── Publications Page Styles ─────────────────────────────────────────── */
+
+/* Import a refined academic serif + clean sans pair */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
+  color: #1a1a2e;
+}
+
+h1 {
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  font-size: 2.2rem;
+  letter-spacing: -0.02em;
+  border-bottom: 2px solid #1a1a2e;
+  padding-bottom: 0.4rem;
+  margin-bottom: 2rem;
+}
+
+/* Year section headers */
+h2 {
+  font-family: 'Lora', serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #555;
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid #c0392b;
+}
+
+/* Individual publication card */
+.pub-entry {
+  background: #fafafa;
+  border: 1px solid #e8e8e8;
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.85rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.pub-entry:hover {
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+  border-color: #c0392b;
+}
+
+/* Authors line */
+.pub-authors {
+  font-size: 0.88rem;
+  color: #555;
+  margin: 0 0 0.2rem 0;
+  font-weight: 300;
+}
+
+.pub-authors strong {
+  color: #1a1a2e;
+  font-weight: 600;
+}
+
+/* Title */
+.pub-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin: 0 0 0.25rem 0;
+  line-height: 1.4;
+}
+
+/* Journal / meta line */
+.pub-meta {
+  font-size: 0.88rem;
+  color: #666;
+  margin: 0;
+  font-style: normal;
+}
+
+.pub-meta em {
+  font-style: italic;
+  color: #444;
+}
+
+/* Citation badge */
+.cite-badge {
+  display: inline-block;
+  background: #eaf0fb;
+  color: #2563eb;
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* Scholar link */
+.scholar-link {
+  color: #c0392b;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.6rem;
+  letter-spacing: 0.02em;
+}
+
+.scholar-link:hover {
+  text-decoration: underline;
+}
