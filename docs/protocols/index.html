@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.9.37">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Protocols – LaMER</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="..//img/logo_trans.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-69ea02176060f95c603da56787064043.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet"><script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+</head>
+<body class="nav-fixed quarto-light">
+<div id="google_translate_element"></div>
+<script>
+  function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+      pageLanguage: 'en',
+      includedLanguages: 'es',
+      layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+  }
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script><div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top"><nav class="navbar navbar-expand-lg " data-bs-theme="dark"><div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../img/logo_trans.png" alt="" class="navbar-logo light-content"><img src="../img/logo_trans.png" alt="" class="navbar-logo dark-content"></a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">LaMER</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+<li class="nav-item">
+    <a class="nav-link" href="../research/index.html"> 
+<span class="menu-text">Research</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../team/index.html"> 
+<span class="menu-text">Team</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications/index.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../courses/index.html"> 
+<span class="menu-text">Courses</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../protocols/index.html" aria-current="page"> 
+<span class="menu-text">Protocols</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../cv/index.html"> 
+<span class="menu-text">CV</span></a>
+  </li>  
+</ul>
+<ul class="navbar-nav navbar-nav-scroll ms-auto">
+<li class="nav-item compact">
+    <a class="nav-link" href="https://www.instagram.com/lucey_lab/"> <i class="bi bi-instagram" role="img">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="mailto:mail.noelle.lucey@upr.edu"> <i class="bi bi-envelope" role="img" aria-label="email">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+</div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav></header><!-- content --><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block default"><div class="quarto-title">
+<h1 class="title">Protocols</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header><div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>## Zooxanthellae Counts
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>title: “Coral Tissue separation &amp; Chl/Zooxanthellae Counts Protocol” output: html_document —</p>
+<section id="part-1-coral-tissue-separation" class="level1"><h1>Part 1: Coral Tissue separation</h1>
+<p>Start with tissue removal and prepping samples for zoox counts and pigments, samples can be frozen in their Eppendorf tubes until we’re ready to do the pigment analysis and zoox counts</p>
+<section id="primary-processing" class="level3"><h3 class="anchored" data-anchor-id="primary-processing">1. Primary processing</h3>
+<ol type="1">
+<li>Filter 1 liter of fresh seawater</li>
+<li>Clean the coral fragment with toothbrush, rinse it in SW</li>
+<li>Place coral fragment in ziplock bag and seal it around the water pick. Hold fragment near top of bag from the outside to allow slurry to drop into bottom of bag while allowing for good visualization of fragment.</li>
+<li>Remove the tissue from entire coral fragment with water-pick using filtered seawater (0.7µm-filtered) until skeleton is white (adjust pressure to 10, don’t want to blow a hole in the bag, but strong enough to remove tissue quickly) ** use water conservatively. Try to remove all tissue with two rounds of 45 mL FSW, but can use more if needed.</li>
+<li>Rinse fragment when white one final time</li>
+<li>Pour the tissue slurry (blastate) into labeled 50 ml Falcon tube</li>
+<li>Rinse walls of bag ONCE with additional 5 mL of FSW and add to Falcon tube</li>
+<li>Record final blastate volume and adjust samples to equal volumes</li>
+<li>Homogenize blastate for 30 seconds using a vortex genie, use homogenizer to break up chunks if necessary</li>
+<li>Centrifuge blastate for 15 minutes at 4,500 rcf<br>
+</li>
+<li>Label the cleaned skeleton and save for surface area via aluminum foil</li>
+</ol>
+<p><a href="../protocols/centrifuged_blastate.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../protocols/centrifuged_blastate.jpg" class="img-fluid"></a></p>
+<p>caption: Animal portion floating at the top, algae pellet at bottom.</p>
+</section><section id="separation-of-tissue-types-animal-tissue" class="level3"><h3 class="anchored" data-anchor-id="separation-of-tissue-types-animal-tissue">2. Separation of tissue types – Animal Tissue</h3>
+<ol type="1">
+<li>Pour the supernatant off from first spin (this is the top layer in the tube and is the ANIMAL fraction). This will leave behind a green/tan pellet—this is the “algae fraction” with some remaining animal tissue (this is what we want for chl a and counts)</li>
+<li>Add 0.75 ml FSW to algal pellet (epp. tube can only be filled to 1.1 mL or it will overflow while homogenizing)</li>
+<li>Vortex until pellet breaks apart (around 30-60 seconds)</li>
+<li>Mix resuspended pellet with pipette and transfer to Eppendorf tube</li>
+<li>Homogenize the algal fraction on high for 30 sec.&nbsp;</li>
+<li>Rinse 50 mL falcon with FSW squirt bottle and fill Eppendorf tube to 1.5 mL line with pipette, vortex 10 seconds.</li>
+</ol>
+<p>#(need images homogenizing algal pellet)</p>
+</section><section id="washing-zoox" class="level3"><h3 class="anchored" data-anchor-id="washing-zoox">3. Washing Zoox</h3>
+<p>This cleans off bits of cell debris and nematocsysts that can be confused for zoox cells during counts</p>
+<ol type="1">
+<li>Centrifuge the resuspended pellet for 5 minutes at 4,500 rfc</li>
+<li>Pour the algal fraction supernatant into the waste beaker<br>
+</li>
+<li>Add 0.5 mL FSW to the algal pellet for first round (to combine epp tubes into one per fragment), 0.75 mL for second round of cleaning.<br>
+</li>
+<li>Vortex until pellet breaks apart (around 30-60 seconds)</li>
+<li>Homogenize (15 sec) and combine with 2nd Eppendorf tube from fragment/sample. Fill tube to 1.5 mL and vortex (10 seconds)</li>
+<li>Centrifuge at 7,000 rfc for 3 min<br>
+</li>
+<li>Repeat steps 2-6 two more times, use 0.75 mL FSW in step 3.</li>
+</ol></section><section id="prepping-the-zoox-for-chl-a-and-for-zoox-counts" class="level3"><h3 class="anchored" data-anchor-id="prepping-the-zoox-for-chl-a-and-for-zoox-counts">4. Prepping the zoox for chl a and for zoox counts</h3>
+<ol type="1">
+<li>Resuspend the cleaned zoox pellet in 1 mL of FSW (use vortex, homogenizer, and pipette to mix the sample well before taking the aliquot) , add 0.25 ml of seawater after homogenizing and vortex.</li>
+</ol>
+<p><a href="../protocols/zoox_homogenate.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-2"><img src="../protocols/zoox_homogenate.jpg" class="img-fluid"></a></p>
+<p>caption: Homogenized algal fractions, ready for aliquot.</p>
+<ol start="2" type="1">
+<li>Transfer a 100 uL aliquot to a labeled eppendorf tube<br>
+</li>
+</ol>
+<ol type="a">
+<li>This is for raw hemocytometer counts<br>
+</li>
+</ol>
+<ol start="3" type="1">
+<li>Transfer 2 separate aliquots of 0.25 mL to 2 epi tubes for PIGMENTS (2 pigment replicates per coral sample) and freeze</li>
+<li>Freeze the remaining 0.5 mL in epi tube for ARCHIVE ( this is our backup)</li>
+</ol>
+<p>** You now should have 4 eppendorf tubes to be frozen (1 for zoox counts, 2 for pigments, 1 archive/extra)</p>
+</section></section><section id="part-2-chlzooxanthellae-counts" class="level1"><h1>Part 2: Chl/Zooxanthellae Counts</h1>
+<p>PROTOCOL FOR ZOOX COUNTS Replication: Do 1 set of 6 counts per coral fragment (that means you’re using only one of your zoox counts subsamples, save the other in the freezer)</p>
+<section id="dilution" class="level3"><h3 class="anchored" data-anchor-id="dilution">1. Dilution</h3>
+<ol type="1">
+<li>Thaw zoox count sample- keep out of direct light</li>
+<li>Resuspend pellet using electric homogenizer and/or vortex</li>
+</ol>
+<ol type="a">
+<li>Remove a 100 uL aliquot and put into new Eppendorf for dilution</li>
+<li>For resuspending use a combination of the vortex and a sewing needle to break up the pellet. Using a syringe and pumping it didn’t go too well.</li>
+</ol>
+<ol start="3" type="1">
+<li>Dilution of the sample will depend on how many zoox there are- start with a 1:1 dilution of the zoox sample and filtered seawater (100 uL homogenate, 100 uL of seawater) ** Try to find a 19-24 gauge hypodermic needle to further separate the zoox cells, draw the sample into and out of the needle multiple times, if you can’t find a needle/syringe skip this step, but there may be clumping</li>
+</ol>
+<p><a href="../protocols/vortex_genie.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-3"><img src="../protocols/vortex_genie.jpg" class="img-fluid"></a></p>
+<p>caption: Vortexing zoox count sample with vortex genie.</p>
+<p><a href="../protocols/homogenize.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-4"><img src="../protocols/homogenize.jpg" class="img-fluid"></a></p>
+<p>caption: Resuspending zoox count sample with electric homogenizer.</p>
+<p><a href="../protocols/hypo_needle.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-5"><img src="../protocols/hypo_needle.jpg" class="img-fluid"></a></p>
+<p>caption: Drawing sample in and out of hypodermic needle to further separate zoox cells.</p>
+<ol start="4" type="1">
+<li>Follow the protocol described in the link for counting cells<br>
+</li>
+<li>Dilute the sample as necessary so you are counting between 125-200 cells per “count”. You should have ~25 zoox cells per quadrant (this is for efficiency, so it doesn’t take you forever to count hundreds of cells)</li>
+<li>Keep track of the dilution you use- this is necessary for cell calculations</li>
+</ol></section><section id="count-the-zoox" class="level3"><h3 class="anchored" data-anchor-id="count-the-zoox">2. Count the zoox</h3>
+<ol start="7" type="1">
+<li>Load the hemocytomter with 10 uL of the diluted sample; Cell Counting With a Hemocytometer: As Easy as 1, 2, 3… To read an overview of counting cells with a hemocytometer. It wouldn’t hurt to look up some of the youtube videos as well.</li>
+<li>Do 6 counts per coral fragment- one ‘count’ is the total number of cells counted across the 5 quadrants in one grid (one side of the hemocytometer)- these are quadrants C,D,B,E,F in the image below</li>
+<li>The hemocytometer has two grids- so you’ll get two counts per slide. You’ll need to do 3 slides to get the 6 counts per fragment.</li>
+</ol>
+<p><a href="../protocols/hemocytometer.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-6"><img src="../protocols/hemocytometer.jpg" class="img-fluid"></a></p>
+<p>caption: Loading hemocytometer with diluted algae sample.</p>
+</section><section id="check-your-numbers" class="level3"><h3 class="anchored" data-anchor-id="check-your-numbers">3. Check your numbers</h3>
+<ol start="10" type="1">
+<li>Calculate your cell densities</li>
+<li>Look up a couple papers that have zoox counts for respective corals from the region of interest and see that your counts are roughly comparable- this ensures you’re doing the dilution and calculation correctly</li>
+</ol></section></section>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>## PAM protocol
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>title: “PAM Protocol” output: html_document —</p>
+<p>Diving PAM II Basic Operation and Protocol</p>
+<p>PAM Overview <img src="../protocols/Picture1.jpg" class="img-fluid"></p>
+<p>• AUX1/AUX2 connects to Mini Spec or Fiber Optic Oxygen Meter FireSting O2 (← THIS IS AMAZING)</p>
+<p>• Fiber Optics Port: Where the fiber optics cable is inserted into the main console.</p>
+<p>• INPUT: Interface to charge the battery and to operate the Diving PAM via WinControl-3</p>
+<p>• As a note, this protocol as it stands will not cover operating DIVING PAM with WinControl. This protocol is meant to be optimized for in situ measurements</p>
+<p>Connecting the Fiber Optic Cord to the PAM: Ensure it is snugly in its port and tighten screw accordingly. There should be no wiggle or play.</p>
+<p><a href="../protocols/Picture2.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7"><img src="../protocols/Picture2.png" class="img-fluid"></a></p>
+<p>Setup for Leafy Material: Seagrasses, Algae, Kelp</p>
+<p><a href="../protocols/Picture3.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8"><img src="../protocols/Picture3.png" class="img-fluid"></a></p>
+<p>Setup for Coral including diagrams for achieving optimal distance.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../protocols/Picture4.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Picture4"><img src="../protocols/Picture4.png" class="img-fluid figure-img" alt="Picture4"></a></p>
+<figcaption>Picture4</figcaption></figure>
+</div>
+<p>Additional Image of Coral Surface Holder with Dark Adaption</p>
+<p><a href="../protocols/Picture5.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-10"><img src="../protocols/Picture5.jpg" class="img-fluid"></a></p>
+<p>*Note the adaptor is placed directly over the surface holder. There is a slit in the black plug for the fiber optic cord to go through. The black plug attached to the string is buoyant and magnetic. It is meant for ease of use.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure"><p><a href="../protocols/Picture6.png" class="lightbox" data-gallery="quarto-lightbox-gallery-11" title="Image of fiberoptics inserted into the Adaptor."><img src="../protocols/Picture6.png" class="img-fluid figure-img" alt="Image of fiberoptics inserted into the Adaptor."></a></p>
+<figcaption>Image of fiberoptics inserted into the Adaptor.</figcaption></figure>
+</div>
+<p>Getting the PAM Ready to Rumble</p>
+<p>• Unless you are using the MINI-Spec, make sure the PAR is selected for internal PAR sensor. Select Menu ⇒ Sensors ⇒ Use Int. PAR ⇒ On Basic Data Page, select Act.L.</p>
+<p>• Adjust GAIN: This is the first of three parameters used to optimize your signal:noise ratio. Noise increases with increasing signal amplification. *Note, Gain should be optimized to your weakest signal (i.e.&nbsp;your most stressed animal).</p>
+<p>• Gain is adjusted by referencing your Ft value (i.e.&nbsp;your current fluorescence).</p>
+<p>• When adjusting Gain, you want your Ft value to be within range of 300-500.</p>
+<p>• To adjust GAIN: Select Menu ⇒ PAM Settings ⇒ Gain ⇒ Select and adjust values between 1-4.</p>
+<p>• Adjust DAMPING: Damping suppresses High Frequency Noise. This ranges from 0-20. The higher your damping, the longer your response time.</p>
+<p>• Adjusting DAMP vs.GAIN requires play. You will have to optimize this to the values you think are most appropriate for your organism.</p>
+<p>• Final range of Ft should be between 300-500. Make sure you record your Gain and Damp. This is oftentimes required to publish. Also, once these values are SET, you cannot change them for the duration of your experiment and data collection period.</p>
+<p>• Adjust F-Offset: This determines the background signal for the subtraction from the total signal.</p>
+<p>• You MUST F-offset after every change to DAMP and GAIN. You must also adjust F-Offset before EVERY data recording period. This should be done in as close to experimental/field conditions as possible. Ideally, this should be done using experimental treatment or on DIVE in the field.</p>
+<p>• Best practice is to ZERO PAM, using a leaf clamp with the metal slider closed.</p>
+<p>• Select Menu ⇒ PAM Settings ⇒ Adjust F-Offset.</p>
+<p>• It will run for 30s.</p>
+<p>• Ft should drop to ~0. Likely between 0-20 with clip on.</p>
+<p><em>make to a table</em></p>
+<p>PAM SETTINGS FOR DIFFERENT CORAL SPECIES SPECIES GAIN DAMPING LIGHT SAT SPACE (mm) Agaricia spp. 2 1 10 7 Acropora cervicornis 1 1 10 7 Diploria labyrinthisformis 3 1 10 7 Siderastrea siderea 1 1 10 7 Porites porites 1 1 10 7 Montastrea cavernosa 2 1 10 7 Orbicella faveolata 1 1 8 7</p>
+<p>Taking Measurements Fv/Fm</p>
+<p>• Before taking measurements, the organisms should be in its natural experimental condition (light, temp, etc) for a minimum of 24 hours. This is because you want all active photosystems active. Dark Adaptation should last for 20 mins, so the photosystems are most relaxed.</p>
+<p>• Select F2. Fv/Fm will show on the main panel.</p>
+<p>• Cross validate your values with reported values in the literature.</p>
+<p>• Temperature and PAR are the two most important drivers for photosynthesis. In order to make direct comparisons, conditions must be the same or as similar as possible.</p>
+<p>Rapid Light Curves</p>
+<p>• Again, this requires some play and a defined expectation for outcome. Literature searches are critical to determine the duration of the light curve.</p>
+<p>• RLC should start at a PAR value below that of its natural environment. They should be acclimated to experimental conditions and NOT dark adapted.</p>
+<p>• If the illumination steps are long enough and refined enough to reach photosynthetic steady state (the asymptote), you can use them as classical light response curves. This means you can calculate alpha, rETRMAX , Ek with considerable confidence.</p>
+<p>References</p>
+<p>Tunala, Layla Poubel, Frederico T.S. Tâmega, Heitor M. Duarte, and Ricardo Coutinho. 2019. Stress Factors in the Photobiology of the Reef Coral Siderastrea Stellata. Journal of Experimental Marine Biology and Ecology. 519: 151188. https://doi.org/10.1016/j.jembe.2019.151188.</p>
+<p>Manzello, D., M. Warner, E. Stabenau, J. Hendee, M. Lesser, and M. Jankulak. 2009. Remote Monitoring of Chlorophyll Fluorescence in Two Reef Corals during the 2005 Bleaching Event at Lee Stocking Island, Bahamas. Coral Reefs 28 (1): 209–14. https://doi.org/10.1007/s00338-008-0455-7.</p>
+<p>Cunning, Ross, Rachel N. Silverstein, and Andrew C. Baker. 2018. Symbiont Shuffling Linked to Differential Photochemical Dynamics of Symbiodinium in Three Caribbean Reef Corals. Coral Reefs 37 (1): 145–52. https://doi.org/10.1007/s00338-017-1640-3.</p>
+<p>Finelli, C. M., B. S. Helmuth, N. D. Pentcheff, and D. S. Wethey. 2007. Intracolony Variability in Photosynthesis by Corals Is Affected by Water Flow: Role of Oxygen Flux. Marine Ecology Progress Series 349: 103–10. https://doi.org/10.3354/meps07101.</p>
+</div>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>## Mean Intensity Gray Bleaching Analysis
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>title: “MIG Bleaching Analysis Protocol” output: html_document —</p>
+<p>Mean Intensity Grey (MIG) Bleaching Analysis</p>
+<p>• Coral bleaching is a visually notable phenomenon where physiological stress results in loss of the coral host’s pigmented endosymbiotic algae, known as Symbiodinium or zooxanthellae. This leaves the coral animal’s tissues white or “bleached” in color. Through photography and digital image analysis of corals in- or ex-situ, Mean Intensity Grey (MIG), or percent whiteness, has been shown to be highly correlated with zooxanthellae and chl-a densities (Chow et al., 2016, Amid et al., 2018) and can give robust estimates of bleaching intensity.</p>
+<p>This method is a simple and non-destructive tool that removes observer bias and provides a more precise, continuous value for coral bleaching intensity as opposed to categorical chart data such as that obtained using references such as the Coral Health Chart (Siebeck et al., 2006).</p>
+<p>PICTURE SET-UP</p>
+<p>Submerge coral fragments and ruler with white standard in shallow bin under camera on stand. Set camera to manual mode (M) and turn on flash so no shadows appear on surface of corals. Take photo and see where narrow flash appears on image and arrange corals so this does not appear over them.</p>
+<p>Organize fragments so individual numbers, white standard and treatment tag are visible.</p>
+<p><a href="../protocols/Picture1.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-12"><img src="../protocols/Picture1.jpg" class="img-fluid"></a></p>
+<p>IMAGE ANALYSIS</p>
+<p>• Name each photo according to tank number and oxygen treatment, ex. ppor_T1_N, and put in folder with species and temp treatment.</p>
+<p>• Open ImageJ and select File -&gt; Open, and select photo to be analyzed.</p>
+<p>• Select Image -&gt; Type -&gt; 8-bit, this will convert image to greyscale.</p>
+<p>• Select oval from ImageJ toolbar and draw a circle over a fragment and select Analyze -&gt; set measurements… and check only mean grey value -&gt; Ok</p>
+<p>• Using the circle selection tool, draw a small circle approximately 1 cm below growing tip for P. porites across the width of the fragment, making sure to only include living tissue. Hit control-m to return MIG measurements. Draw a circle on the white background without specs and glare or shadows and take measurement, this will be used as the reference MIG value to normalize fragment colorimetric values.</p>
+<p>For porites and acropora, circle was drawn approximately 1 cm below the growing tip from the same area that was sampled for zooxanthellae density counts.</p>
+<p>References</p>
+<p>Amid, C., Olstedt, M., Gunnarsson, J.S. et al.&nbsp;Additive effects of the herbicide glyphosate and elevated temperature on the branched coral Acropora formosa in Nha Trang, Vietnam. Environ Sci Pollut Res 25, 13360–13372 (2018). https://doi.org/10.1007/s11356-016-8320-7</p>
+<p>Chow MH, Tsang RHL, Lam EKY, Ang P. 2016. Quantifying the degree of coral bleaching using digital photographic technique. Journal of Experimental Marine Biology and Ecology.</p>
+<p>Siebeck, U.E., Marshall, N.J., Kluter, A., Hoegh-Guldberg, O., 2006. Monitoring coral bleaching using a colour reference card. Coral Reefs 25, 453–460.</p>
+</div>
+</div>
+</div>
+
+
+
+</main><!-- /main --><script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer"><div class="nav-footer">
+    <div class="nav-footer-left">
+<p><span class="faux-block">© 2026 Noelle Lucey CC BY-SA 4.0</span></p>
+</div>   
+    <div class="nav-footer-center">
+<p><span class="faux-block">Built with <a href="https://quarto.org/">Quarto</a></span></p>
+</div>
+    <div class="nav-footer-right">
+<p><span class="faux-block"><a href="https://github.com/LaMER-UPR/LaMER-UPR.github.io">View source on GitHub</a></span></p>
+</div>
+  </div>
+</footer><script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
+
+
+</body></html>

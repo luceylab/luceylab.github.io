@@ -1,0 +1,114 @@
+---
+title: "LaMER"
+subtitle: "Laboratory of Marine Ecophysiology and Resilience"
+about:
+  template: jolla
+  id: about-block
+  links:
+    - icon: instagram
+      text: Instagram
+      href: https://www.instagram.com/lucey_lab/
+    - icon: bluesky
+      text: BlueSky
+      href: https://bsky.app/profile/noellelucey.bsky.social
+    - icon: researchgate
+      text: "{{< fa brands researchgate >}} ResearchGate"
+      href: https://www.researchgate.net/profile/yourprofile
+    - icon: github
+      text: Github
+      href: https://github.com/nlucey20
+    - icon: envelope
+      text: Email
+      href: "mailto:mail.noelle.lucey@upr.edu"  
+editor: 
+  markdown: 
+    wrap: 72
+---
+
+::::::::: {.grid style="gap: 0.25rem;"}
+::: g-col-4
+![](img/Ofav.JPG){width="100%"}
+:::
+
+::: g-col-4
+![](img/Worms.JPG){width="100%"}
+:::
+
+::: g-col-4
+![](img/logger.jpg){width="100%"}
+:::
+
+::: g-col-4
+![](img/fish.jpg){width="100%"}
+:::
+
+::: g-col-4
+![](img/Sharknose_goby.JPG){width="100%"}
+:::
+
+::: g-col-4
+![](img/parguera_reef.JPG){width="100%"}
+:::
+:::::::::
+
+::: {#about-block}
+:::
+
+# Welcome!
+
+Our lab’s research aims to assess and mitigate the **physiological
+consequences** of climate change impacting marine organisms and the
+ecosystems they make up. Specifically, we use tropical marine
+ectotherms, i.e. cold-blooded animals, to understand the consequences of
+warming, oxygen loss and acidification in tropical habitats. This focus
+is spread across different scientific disciplines to form linkages
+between physiology and ecology, oceanography, and marine conservation.
+Our intention is to generate research that can support restorative
+aquaculture innovation, nature-based solutions, and lead to biodiversity
+conservation. The overarching goal of the lab is to develop effective
+solutions for equitable tropical marine resources.
+
+# Research Interests
+
+We are a multidisciplinary group connecting climate change impacts to
+four distinct fields: physiology, ecology, oceanography, and
+conservation.
+
+Three main themes:
+
+1. Respiratory and metabolic physiology 
+
+2. Physiological diversity of tropical ectotherms
+
+3. Physiological correlates of geographic ranges in marine animals
+
+![Figure 1. Starting in the physilogy node, our research links to
+different disciplines to provide a mechanistic understanding of how
+marine biodiversity is changing. Click to
+expand.](img/lab%20interests.png){.column-screen-inset}
+
+[Keywords: physiological adaptation, marine ecotherms, multistressor
+experiments, climate resilience, restorative aquaculture, integrated
+multitropic aquaculture, marine habitability and biogeography, compound
+extreme ocean events, tropical marine biodiversity, oxygen, hypoxia,
+metabolism, marine conservation.]{.smallcaps}
+
+# Contact
+
+![](img/noelle.jpg){style="max- object-fit:cover; border-radius:8px; margin-bottom:1rem;"
+width="50%"}
+
+**Dr. Noelle Lucey, Assistant Professor**
+
+Please feel free to [contact me](mailto:mail.noelle.lucey@upr.edu) if
+you have any questions or would like to discuss potential projects.
+
+**Department** Department of Marine Sciences
+<https://www.uprm.edu/cima/>
+
+**Institution** University of Puerto Rico Mayagüez
+
+**Mailing address:** Mayagüez Campus PO Box 9000 Mayagüez, PR 00681-9000
+
+**Physical address:** Isla Magueyes Field Station Department of Marine
+Sciences - UPRM Road 304 Interior, La Parguera Lajas, Puerto Rico 00667
