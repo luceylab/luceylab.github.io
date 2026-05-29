@@ -3,11 +3,9 @@ title: "Team"
 ---
 
 
-::: {layout-ncol=2}
+::: {layout-ncol=1}
 ![](/img/lab_pics.JPG)
 
-
-![](/img/happylab.jpg)
 :::
 
 

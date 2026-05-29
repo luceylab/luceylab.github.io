@@ -5,10 +5,10 @@ title: "Courses"
 ::: {.equal-figures}
 :::: {.columns}
 ::: {.column width="50%"}
-![Seagrass surveys in Bio Bay, LA Parguera with CBOM 5017](/img/CBOM5007.jpg)
+![CBOM 5017](/img/CBOM5007.jpg)
 :::
 ::: {.column width="50%"}
-![Extreme golf-carting through Culebra](/img/culebra.jpg)
+![CBOM 5017](MaryRLS.jpg)
 :::
 ::::
 :::
