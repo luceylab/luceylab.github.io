@@ -1,8 +1,7 @@
 ---
-title: "LaMER"
-subtitle: "Laboratory of Marine Ecophysiology and Resilience"
+title: ""
 about:
-  template: jolla
+  template: marquee
   id: about-block
   links:
     - icon: instagram
@@ -24,6 +23,38 @@ editor:
   markdown: 
     wrap: 72
 ---
+::: {.hero-banner}
+![](img/parguera_reef.JPG)
+
+::: {.hero-text}
+# el mar lab
+### Ecophysiology Laboratory of Marine Aquaculture and Resilience
+
+::: {.hero-links}
+[{{< fa brands instagram >}} Instagram](https://www.instagram.com/lucey_lab/){.hero-link}
+[{{< fa brands bluesky >}} BlueSky](https://bsky.app/profile/noellelucey.bsky.social){.hero-link}
+[{{< fa brands github >}} Github](https://github.com/nlucey20){.hero-link}
+[{{< fa envelope >}} Email](mailto:mail.noelle.lucey@upr.edu){.hero-link}
+:::
+:::
+:::
+
+:::[#about-block]
+:::
+
+# Welcome!
+
+Our lab’s research aims to assess and mitigate the **physiological
+consequences** of climate change impacting marine organisms and the
+ecosystems they make up. Specifically, we use tropical marine
+ectotherms, i.e. cold-blooded animals, to understand the consequences of
+warming, oxygen loss and acidification in tropical habitats. This focus
+is spread across different scientific disciplines to form linkages
+between physiology and ecology, oceanography, and marine conservation.
+Our intention is to generate research that can support restorative
+aquaculture innovation, nature-based solutions, and lead to biodiversity
+conservation. The overarching goal of the lab is to develop effective
+solutions for equitable tropical marine resources.
 
 ::::::::: {.grid style="gap: 0.25rem;"}
 ::: g-col-4
@@ -51,22 +82,7 @@ editor:
 :::
 :::::::::
 
-::: {#about-block}
-:::
 
-# Welcome!
-
-Our lab’s research aims to assess and mitigate the **physiological
-consequences** of climate change impacting marine organisms and the
-ecosystems they make up. Specifically, we use tropical marine
-ectotherms, i.e. cold-blooded animals, to understand the consequences of
-warming, oxygen loss and acidification in tropical habitats. This focus
-is spread across different scientific disciplines to form linkages
-between physiology and ecology, oceanography, and marine conservation.
-Our intention is to generate research that can support restorative
-aquaculture innovation, nature-based solutions, and lead to biodiversity
-conservation. The overarching goal of the lab is to develop effective
-solutions for equitable tropical marine resources.
 
 # Research Interests
 

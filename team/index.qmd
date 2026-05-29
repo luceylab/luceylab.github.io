@@ -3,13 +3,14 @@ title: "Team"
 ---
 
 
-::: {layout-ncol=3}
-![](/img/PR_icecream.JPG)
-![](/img/lab_pics.jpg)
-![](/img/rainbows.jpg)
+::: {layout-ncol=2}
+![](/img/lab_pics.JPG)
+
+
+![](/img/happylab.jpg)
 :::
 
----
+
 
 Currently in the lab:
 
@@ -28,7 +29,7 @@ Jonathan Burnap is from Richmond, Virginia, and a graduate of Virginia Tech with
 
 ---
 
-![](caro_photo.jpg){.float-left}
+![](caro_photo.jpeg){.float-left}
 
 
 Carolina César Ávila is originally from La Chorrera, Panama, and has a background in Marine Biology from the International Maritime University of Panama. Before joining the lab in August 2025, Carolina worked as a Research Technician in the Smithsonian's Tropical Research Institute, Bocas del Toro, for the Marine GEO Network. Carolina is passionate about coral reef ecosystems; her research interest explores how compound extreme events affect coral physiology. She enjoys diving, photography, longboarding, birdwatching, and spending time with her cat in her free time.

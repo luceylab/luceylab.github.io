@@ -20,13 +20,8 @@ This is done in two parts:
 
 ![Damsel in respirometry chamber](/img/fish.jpg)
 
-Also, we are assessing their oxygen demand while swimming:
+Also, we are assessing their oxygen demand while swimming, measuring aerobic scope under stress.
 
-<video src="/img/gom_fish_video.mov" controls muted>
-
-Assessing fish respiration and hypoxia tolerance under activity.
-
-</video>
 
 ------------------------------------------------------------------------
 
@@ -62,15 +57,7 @@ Collaborators: Mariela Cortes, Jan and Vance Vicente, Bernice Pauahi Bishop Muse
 
 In marine ecosystems, the abiotic variables dictating habitability must include increased warming as well as reduced oxygen. This is because oxygen is rapidly declining in all oceanic systems as the planet warms. And these climatic variables impact biotic variables: rising temperatures increase the metabolic rates and oxygen demand of most animals. To accurately predict where species can live in our changing oceans, we must account for changing oxygen dynamics, temperature, and species-specific physiological limits.
 
-By combining species’ physiology, animal behavior with oceanographic monitoring, my past work has demonstrated how species’ range boundaries are changing on Caribbean coral reefs, in other words, metabolic restrictions on activity trigger tropical biodiversity loss and reduced habitability for an abundant and diverse group of marine invertebrates, ophiuroids:
-
-<video src="/img/Feeding_O.cinereum.mp4" controls muted width="70%">
-
-Feeding O. cinereum pushed out of reef habitat due to episodic hypoxia.
-
-</video>
-
-</br>
+By combining species’ physiology, animal behavior with oceanographic monitoring, my past work has demonstrated how species’ range boundaries are changing on Caribbean coral reefs, in other words, metabolic restrictions on activity trigger tropical biodiversity loss and reduced habitability for an abundant and diverse group of marine invertebrates, ophiuroids!
 
 Now, in partnership with Smithsonian Institution's MarineGEO network, we are understanding how these physiologcal limits differ across gradients of marine biodiversity. To start, we kicked off a long-term monitoring program using [Reef Life Survey](https://reeflifesurvey.com/) methods, to document the cryptic and mobile reef fish and invertebrates across 12 reefs around La Parguera, Puerto Rico.
 
