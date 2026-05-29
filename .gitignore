@@ -7,3 +7,5 @@
 **/*.quarto_ipynb
 _freeze/
 .DS_Store
+.httr-oauth
+.quarto
