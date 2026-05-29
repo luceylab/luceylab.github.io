@@ -28,7 +28,7 @@ editor:
 
 ::: {.hero-text}
 # el mar lab
-### Ecophysiology Laboratory of Marine Aquaculture and Resilience
+### Ecophysiology of Marine Aquaculture and Resilience
 
 ::: {.hero-links}
 [{{< fa brands instagram >}} Instagram](https://www.instagram.com/lucey_lab/){.hero-link}
