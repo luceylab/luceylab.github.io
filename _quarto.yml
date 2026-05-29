@@ -1,6 +1,6 @@
 website:
   title: "mare lab"     
-  description: "Laboratory of Marine Aquaculture Resilience and Ecophysiologys"   
+  description: "Marine Aquaculture and Resilience through Ecophysiology"   
   favicon: /img/logo_trans.png
   
   # navigation bar at the top of the website
@@ -42,7 +42,7 @@ website:
     center: |
       <span class="faux-block">Built with <a href="https://quarto.org/">Quarto</a></span>
     right: |
-      <span class="faux-block"><a href="https://github.com/LaMER-UPR/LaMER-UPR.github.io">View source on GitHub</a></span>
+      <span class="faux-block"><a href="https://github.com/mare-lab/mare-lab.github.io">View source on GitHub</a></span>
 
 project:
   type: website
