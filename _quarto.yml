@@ -1,8 +1,7 @@
 website:
-  title: "mare lab"     
-  description: "Marine Aquaculture and Resilience through Ecophysiology"   
-  favicon: /img/logo_trans.png
-  
+  title: "Lucey Lab"     
+  description: "Ecophysiology and Marine Resilience"
+
   # navigation bar at the top of the website
   navbar:
     pinned: true
