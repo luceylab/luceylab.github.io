@@ -1,4 +1,4 @@
-# Quarto Website for La_MER 
+# Quarto Website for Lucey Lab 
 
 This repository contains the website, and supporting protocols for the Laboratory of Marine Ecophysiology and Resilience, at UPRM. Created by Noelle Lucey, with major contributions from Marvin Schmitt, as the website here was adapted and built from the template provided at <https://www.marvinschmitt.com/blog/website-tutorial-quarto/>.
 

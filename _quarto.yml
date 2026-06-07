@@ -1,6 +1,6 @@
 website:
   title: "Lucey Lab"     
-  description: "Ecophysiology and Marine Resilience"
+  description: "Laboratory of Marine Ecophysiology and Resilience"
 
   # navigation bar at the top of the website
   navbar:

@@ -27,8 +27,8 @@ editor:
 ![](img/parguera_reef.JPG)
 
 ::: {.hero-text}
-# mare lab
-### Marine Aquaculture and Resilience through Ecophysiology
+# Lucey lab
+### Laboratory of Marine Ecophysiology and Resilience
 
 ::: {.hero-links}
 [{{< fa brands instagram >}} Instagram](https://www.instagram.com/lucey_lab/){.hero-link}
