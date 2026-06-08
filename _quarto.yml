@@ -41,7 +41,7 @@ website:
     center: |
       <span class="faux-block">Built with <a href="https://quarto.org/">Quarto</a></span>
     right: |
-      <span class="faux-block"><a href="https://github.com/mare-lab/mare-lab.github.io">View source on GitHub</a></span>
+      <span class="faux-block"><a href="https://github.com/luceylab/luceylab.github.io">View source on GitHub</a></span>
 
 project:
   type: website

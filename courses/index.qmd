@@ -2,16 +2,17 @@
 title: "Courses"
 ---
 
-::: {.equal-figures}
-:::: {.columns}
+:::::: equal-figures
+::::: columns
 ::: {.column width="50%"}
 ![CBOM 5017](/img/CBOM5007.jpg)
 :::
+
 ::: {.column width="50%"}
 ![CBOM 5017](MaryRLS.jpg)
 :::
-::::
-:::
+:::::
+::::::
 
 ------------------------------------------------------------------------
 
@@ -56,7 +57,7 @@ CMOB 5017 ·Fall 2025
 
 - Nature-based interventions - Culebra Oyster aquaculture Community fisheries
 
-::: {layout-ncol=2}
+::: {layout-ncol="2"}
 ![Jenniffer Perez, PhD candidate monitoring water parameters at our coral reef sites.](/img/jenniffer_Perez.jpg){style="object-fit:cover; border-radius:8px;" width="100%"}
 
 ![Jonathan Burnap monitoring seagrass health](/img/seagrass2.jpg){style="object-fit:cover; border-radius:8px;" width="100%"}
