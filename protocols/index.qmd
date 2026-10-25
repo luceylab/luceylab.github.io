@@ -18,3 +18,11 @@ title: Protocols
 {{< include MIG-protocol/MIGprotocol.qmd >}}
 :::
 
+::: {.callout-note collapse="true"}
+## Project Template (GitHub)
+A template repository for organizing lab projects: raw and processed data, numbered analysis scripts, figures, and a README with a reproduction checklist.
+
+Use it by clicking **Use this template** on GitHub, or clone it directly.
+
+[github.com/luceylab/project-template](https://github.com/luceylab/project-template){target="_blank"}
+:::
