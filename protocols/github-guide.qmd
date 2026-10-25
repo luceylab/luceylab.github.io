@@ -1,0 +1,148 @@
+---
+title: "Lab GitHub Guide"
+description: "How to get set up and contribute to lab projects and this website."
+toc: true
+toc-depth: 2
+---
+
+This guide walks you through everything you need to start working with the lab's code, data workflows, and website. You only need to do the setup once. After that, the daily workflow is about five steps.
+
+If you get stuck, jump to [Getting help](#getting-help).
+
+## Why we use GitHub
+
+- Every change is saved and can be undone.
+- Several people can work on the same project without overwriting each other.
+- Your analysis is documented and reproducible, which helps with theses, papers, and reviewers.
+- The lab website updates automatically from the work we put there.
+
+## One-time setup
+
+### 1. Create a GitHub account
+
+Go to [github.com](https://github.com) and sign up. Use a username you're comfortable having on your CV. Then send your username to Dr. Lucey so she can add you to the lab organization.
+
+### 2. Accept the invitation to the organization
+
+You'll get an email invitation to join **luceylab**. Accept it. You'll then see the lab's repositories (projects) when you visit [github.com/luceylab](https://github.com/luceylab).
+
+### 3. Install the tools
+
+- **[GitHub Desktop](https://desktop.github.com/)**: a point-and-click way to use Git, so you don't need the command line.
+- **[R](https://cran.r-project.org/) and [RStudio](https://posit.co/download/rstudio-desktop/)**: for analysis.
+- **[Quarto](https://quarto.org/docs/get-started/)**: only needed if you'll edit the website and preview it locally.
+
+Open GitHub Desktop and sign in with your GitHub account.
+
+### 4. Tell Git who you are
+
+In GitHub Desktop, go to *Settings → Git* and enter your name and the email you used for GitHub. This labels your changes with your name.
+
+## Starting a new project
+
+1. Go to the lab's **project-template** repository: [github.com/luceylab/project-template](https://github.com/luceylab/project-template).
+2. Click the green **Use this template** button, then **Create a new repository**.
+3. Set the owner to **luceylab**, give the repo a short lowercase name with hyphens (for example, `coral-hypoxia-pcrit`), and choose **Private** unless told otherwise.
+4. Click **Create repository**.
+5. Ask Dr. Lucey to add collaborators if they aren't already on the team.
+6. In GitHub Desktop, choose *File → Clone repository*, pick your new repo, and choose where to save it on your computer.
+
+::: {.callout-tip}
+Save repos in a simple folder such as `Documents/GitHub`. Avoid folders synced by OneDrive, Dropbox, or iCloud, which can cause problems with Git.
+:::
+
+Fill in the README with your project title, lead, and where the raw data lives.
+
+## Joining an existing project
+
+Open GitHub Desktop, choose *File → Clone repository*, find the repo under **luceylab**, and click **Clone**. Read the README and `CONTRIBUTING.md` before changing anything.
+
+## The daily workflow
+
+Use these five steps every time you work on a project.
+
+### 1. Pull
+
+Before you start, get the latest version: click **Fetch origin**, then **Pull origin**.
+
+### 2. Make a branch
+
+*Branch → New branch*. Name it with your initials and what you're doing, such as `nc-clean-pcrit-data`. A branch is your own copy of the work, so nothing you do affects anyone else until it's reviewed.
+
+### 3. Work and commit
+
+Edit files in RStudio (or any editor). When you reach a sensible stopping point, go back to GitHub Desktop, review the changed files, write a short summary of what you did, and click **Commit**. Commit often.
+
+### 4. Push
+
+Click **Push origin** to send your branch to GitHub.
+
+### 5. Open a Pull Request
+
+Click **Create Pull Request**. On GitHub, describe what you changed and why, and request a reviewer. Once it's approved, merge it. Then switch back to `main` in GitHub Desktop, pull, and delete your old branch.
+
+## Where things go
+
+| What | Where |
+|---|---|
+| Raw data | The shared location listed in `data/raw/README.md`, **not** in Git |
+| Cleaned data | `data/processed/` |
+| Scripts and notebooks | `analysis/` (numbered in run order) |
+| Figures | `figures/` |
+| Project notes and status | The README |
+
+### Data rules, in short
+
+- Never edit raw data files by hand. Clean them with a script.
+- Don't commit large files or anything in the `.gitignore`.
+- Never commit passwords, keys, or private information.
+
+## Adding or updating your project on the lab website
+
+The website lists lab projects automatically from small files in the `projects/` folder.
+
+1. Clone the website repo (`luceylab/luceylab.github.io` or the name Dr. Lucey gives you) with GitHub Desktop.
+2. Create a branch as described above.
+3. In the `projects/` folder, copy an existing project file and rename it, for example `my-project.qmd`.
+4. Edit the header at the top and the text below it:
+
+```yaml
+---
+title: "Your Project Title"
+description: "One-sentence summary for the project list."
+author: "Your Name"
+date: 2026-10-24
+categories: [coral, hypoxia, in-progress]
+image: img/my-project.jpg
+---
+```
+
+5. Add a link to your project's GitHub repo, a short summary, and who to contact.
+6. Commit, push, and open a Pull Request. After it's approved and merged, the site rebuilds on its own in a few minutes.
+
+::: {.callout-note}
+Only put public-safe information on the website. For unpublished work, share a general description and not data, results, or figures, unless the project lead approves.
+:::
+
+To preview the site before you push, open the website folder in RStudio and run `quarto preview` in the Terminal tab.
+
+## Getting help
+
+- **Something isn't working?** Check [this guide](#the-daily-workflow) first, then ask in the lab chat.
+- **Merge conflict?** Don't delete files. Ask for help and include a screenshot.
+- **Pushed something by mistake?** Tell the project lead right away.
+- **Stuck for more than 30 minutes?** Ask. That's what the lab is for.
+
+## Glossary
+
+| Term | Meaning |
+|---|---|
+| Repository (repo) | A project folder tracked by Git and stored on GitHub |
+| Clone | Download a copy of a repo to your computer |
+| Commit | A saved snapshot of your changes, with a message |
+| Branch | A separate line of work that doesn't affect `main` |
+| Push / Pull | Send your commits to GitHub / get others' commits from GitHub |
+| Pull Request (PR) | A request to merge your branch into `main`, with review |
+| Merge | Combine a branch into `main` |
+| Issue | A task, bug, or question tracked on GitHub |
+| Fork | Your own copy of someone else's repo (rarely needed within the lab) |
